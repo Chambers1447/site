@@ -35,6 +35,8 @@ extra:
       link: 'https://www.reddit.com/user/DirWalk'
     - type: 'twitter'
       link: 'https://twitter.com/DirWalk'
+    - type: 'envelope-o'
+      link: 'mailto:dirwalk@pm.me'
 
 extra_css:
   - 'stylesheets/extra.css'

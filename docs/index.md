@@ -11,3 +11,4 @@ This blog is here primarily to help me document and further solidify lessons lea
 ## Social
 
 Social links are down below, but I'm not very active currently.  I do a lot of commits to GitHub, though. 
+
