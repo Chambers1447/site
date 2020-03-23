@@ -37,6 +37,10 @@ extra:
       link: 'https://twitter.com/DirWalk'
     - type: 'envelope-o'
       link: 'mailto:dirwalk@pm.me'
+    - type: 'book'
+      link: 'https://wiki.dirwalk.com'
+    - type: 'home'
+      link: 'https://dirwalk.com'
 
 extra_css:
   - 'stylesheets/extra.css'
