@@ -147,3 +147,10 @@ and background color
   .md-search-result__teaser {
     color: #BDBDBD !important;
   }
+
+  /*
+  remove table of content
+  */
+  .md-sidebar--secondary {
+    display: none;
+  }
