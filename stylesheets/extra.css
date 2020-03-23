@@ -5,6 +5,13 @@
 */
 
 /*
+remove table of content
+*/
+.md-sidebar--secondary {
+  display: none;
+}
+
+/*
 Default text color
 and background color
 */
@@ -148,9 +155,3 @@ and background color
     color: #BDBDBD !important;
   }
 
-  /*
-  remove table of content
-  */
-  .md-sidebar--secondary {
-    display: none;
-  }
