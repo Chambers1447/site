@@ -5,7 +5,7 @@ site_author: 'DirWalk'
 site_url: 'https://dirwalk.com'
 
 # Repository
-repo_name: 'DirWalk/Wiki'
+repo_name: 'DirWalk/site'
 repo_url: 'https://github.com/DirWalk/site'
 
 # Copyright
@@ -14,6 +14,7 @@ repo_url: 'https://github.com/DirWalk/site'
 # Configuration
 theme:
   name: 'material'
+  custom_dir: 'theme'
   language: 'en'
   palette:
     primary: 'indigo'
@@ -30,6 +31,10 @@ extra:
     social:
     - type: 'github'
       link: 'https://github.com/DirWalk'
+    - type: 'reddit'
+      link: 'https://www.reddit.com/user/DirWalk'
+    - type: 'twitter'
+      link: 'https://twitter.com/DirWalk'
 
 extra_css:
   - 'stylesheets/extra.css'
