@@ -12,3 +12,6 @@ This blog is here primarily to help me document and further solidify lessons lea
 
 Social links are down below, but I'm not very active currently.  I do a lot of commits to GitHub, though. 
 
+## CTFs and Write-Ups
+
+I do my best to document my process.  If I have incomplete sections, I'm likely still working on it.  I'll finish it!
