@@ -15,3 +15,7 @@ Social links are down below, but I'm not very active currently.  I do a lot of c
 ## CTFs and Write-Ups
 
 I do my best to document my process.  If I have incomplete sections, I'm likely still working on it.  I'll finish it!
+
+## Wiki
+
+I also have a [wiki](https://wiki.dirwalk.com) that I try to update.  If you're looking for any additional information check it out!
