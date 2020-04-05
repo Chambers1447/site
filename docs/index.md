@@ -18,4 +18,4 @@ I do my best to document my process.  If I have incomplete sections, I'm likely 
 
 ## Wiki
 
-I also have a [wiki](https://wiki.dirwalk.com) that I try to update.  If you're looking for any additional information check it out!
+I also have a [wiki](https://dirwalk.com/wiki) that I try to update.  If you're looking for any additional information check it out!

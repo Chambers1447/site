@@ -53,6 +53,3 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
-  - redirects:
-      redirect_maps:
-        'wiki.md': 'https://wiki.dirwalk.com'
