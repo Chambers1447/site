@@ -1,0 +1,3967 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A blog by DirWalk">
+      
+      
+        <link rel="canonical" href="https://dirwalk.com/wiki/Programming/Cheat%20Sheets/Python/">
+      
+      
+        <meta name="author" content="DirWalk">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Python - Blog by Dirwalk</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#python" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://dirwalk.com" title="Blog by Dirwalk" aria-label="Blog by Dirwalk" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">code</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Blog by Dirwalk
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Python
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/DirWalk/site/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    DirWalk/site
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://dirwalk.com" title="Blog by Dirwalk" class="md-nav__button md-logo">
+      
+        <i class="md-icon">code</i>
+      
+    </a>
+    Blog by Dirwalk
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/DirWalk/site/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    DirWalk/site
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Write Ups
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Write Ups
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      OverTheWire
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        OverTheWire
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+    
+    <label class="md-nav__link" for="nav-2-1-1">
+      Bandit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-1">
+        Bandit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%200/" title="Level 0" class="md-nav__link">
+      Level 0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%201/" title="Level 1" class="md-nav__link">
+      Level 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%202/" title="Level 2" class="md-nav__link">
+      Level 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%203/" title="Level 3" class="md-nav__link">
+      Level 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%204/" title="Level 4" class="md-nav__link">
+      Level 4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%205/" title="Level 5" class="md-nav__link">
+      Level 5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%206/" title="Level 6" class="md-nav__link">
+      Level 6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%207/" title="Level 7" class="md-nav__link">
+      Level 7
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%208/" title="Level 8" class="md-nav__link">
+      Level 8
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%209/" title="Level 9" class="md-nav__link">
+      Level 9
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2010/" title="Level 10" class="md-nav__link">
+      Level 10
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2011/" title="Level 11" class="md-nav__link">
+      Level 11
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2012/" title="Level 12" class="md-nav__link">
+      Level 12
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2013/" title="Level 13" class="md-nav__link">
+      Level 13
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2014/" title="Level 14" class="md-nav__link">
+      Level 14
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2015/" title="Level 15" class="md-nav__link">
+      Level 15
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2016/" title="Level 16" class="md-nav__link">
+      Level 16
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2017/" title="Level 17" class="md-nav__link">
+      Level 17
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2018/" title="Level 18" class="md-nav__link">
+      Level 18
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2019/" title="Level 19" class="md-nav__link">
+      Level 19
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2020/" title="Level 20" class="md-nav__link">
+      Level 20
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2021/" title="Level 21" class="md-nav__link">
+      Level 21
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2022/" title="Level 22" class="md-nav__link">
+      Level 22
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2023/" title="Level 23" class="md-nav__link">
+      Level 23
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2024/" title="Level 24" class="md-nav__link">
+      Level 24
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2025/" title="Level 25" class="md-nav__link">
+      Level 25
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2026/" title="Level 26" class="md-nav__link">
+      Level 26
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2027/" title="Level 27" class="md-nav__link">
+      Level 27
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2028/" title="Level 28" class="md-nav__link">
+      Level 28
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2029/" title="Level 29" class="md-nav__link">
+      Level 29
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2030/" title="Level 30" class="md-nav__link">
+      Level 30
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2031/" title="Level 31" class="md-nav__link">
+      Level 31
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2032/" title="Level 32" class="md-nav__link">
+      Level 32
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/OverTheWire/Bandit/Level%2033/" title="Level 33" class="md-nav__link">
+      Level 33
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      PicoCTF
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        PicoCTF
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-1" type="checkbox" id="nav-2-2-1">
+    
+    <label class="md-nav__link" for="nav-2-2-1">
+      2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-1">
+        2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/13/" title="13" class="md-nav__link">
+      13
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/2Warm/" title="2Warm" class="md-nav__link">
+      2Warm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Based/" title="Based" class="md-nav__link">
+      Based
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Bases/" title="Bases" class="md-nav__link">
+      Bases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Easy1/" title="Easy1" class="md-nav__link">
+      Easy1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/First%20Grep/" title="First Grep" class="md-nav__link">
+      First Grep
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/First%20Grep_%20Part%20II/" title="First Grep: Part II.md" class="md-nav__link">
+      First Grep: Part II.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Flags/" title="Flags.md" class="md-nav__link">
+      Flags.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Glory%20of%20the%20Garden/" title="Glory of the Garden" class="md-nav__link">
+      Glory of the Garden
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Insp3ct0r/" title="Insp3ct0r" class="md-nav__link">
+      Insp3ct0r
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Lets%20Warm%20Up/" title="Lets Warm Up" class="md-nav__link">
+      Lets Warm Up
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Mr-Worldwide/" title="Mr-Worldwide" class="md-nav__link">
+      Mr-Worldwide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/So%20Meta/" title="So Meta" class="md-nav__link">
+      So Meta
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/The%20Factorys%20Secret/" title="The Factory's Secret" class="md-nav__link">
+      The Factory's Secret
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/The%20Numbers/" title="The Numbers" class="md-nav__link">
+      The Numbers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/Warmed%20Up/" title="Warmed Up" class="md-nav__link">
+      Warmed Up
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/caesar/" title="caesar" class="md-nav__link">
+      caesar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/dont-use-client-side/" title="dont-use-client-side" class="md-nav__link">
+      dont-use-client-side
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/extensions/" title="extensions" class="md-nav__link">
+      extensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/handy-shellcode/" title="handy-shellcode" class="md-nav__link">
+      handy-shellcode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/like1000/" title="like1000" class="md-nav__link">
+      like1000
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/practice-run-1/" title="practice-run-1" class="md-nav__link">
+      practice-run-1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/shark%20on%20wire%201/" title="shark on wire 1" class="md-nav__link">
+      shark on wire 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/strings%20it/" title="strings it" class="md-nav__link">
+      strings it
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/unzip/" title="unzip" class="md-nav__link">
+      unzip
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/vault-door-1/" title="vault-door-1" class="md-nav__link">
+      vault-door-1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/vault-door-training/" title="vault-door-training" class="md-nav__link">
+      vault-door-training
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/whats%20a%20net%20cat_/" title="what's a net cat?" class="md-nav__link">
+      what's a net cat?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/whats-the-difference/" title="Whats the difference" class="md-nav__link">
+      Whats the difference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/where%20are%20the%20robots/" title="where are the robots" class="md-nav__link">
+      where are the robots
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Write-Ups/PicoCTF/2019/where-is-the-file/" title="where-is-the-file" class="md-nav__link">
+      where-is-the-file
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Wiki
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Wiki
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Virtual%20Resources%202020/" title="Virtual Resources of 2020" class="md-nav__link">
+      Virtual Resources of 2020
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Penetration Testing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        Penetration Testing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-1" type="checkbox" id="nav-3-3-1">
+    
+    <label class="md-nav__link" for="nav-3-3-1">
+      Active Enumeration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-1">
+        Active Enumeration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Active%20Enumeration/Arp-scan/" title="Arp scan" class="md-nav__link">
+      Arp scan
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Active%20Enumeration/Netcat/" title="Netcat" class="md-nav__link">
+      Netcat
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Active%20Enumeration/Netdiscover/" title="Netdiscover" class="md-nav__link">
+      Netdiscover
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Active%20Enumeration/Nmap/" title="Nmap" class="md-nav__link">
+      Nmap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Active%20Enumeration/Recursive%20md5sum/" title="Recursive `md5sum`" class="md-nav__link">
+      Recursive `md5sum`
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-2" type="checkbox" id="nav-3-3-2">
+    
+    <label class="md-nav__link" for="nav-3-3-2">
+      Cheat Sheets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-2">
+        Cheat Sheets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Cheat%20Sheets/Common%20Ports/" title="Common Ports to Remember" class="md-nav__link">
+      Common Ports to Remember
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Cheat%20Sheets/John%20the%20Ripper/" title="John the Ripper" class="md-nav__link">
+      John the Ripper
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Cheat%20Sheets/MSFVenom%20Reverse%20Shell%20Payload/" title="MSFVenom Reverse Shell Payload" class="md-nav__link">
+      MSFVenom Reverse Shell Payload
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Cheat%20Sheets/Nmap/" title="Nmap" class="md-nav__link">
+      Nmap
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-3" type="checkbox" id="nav-3-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3-3">
+      Passive Enumeration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-3">
+        Passive Enumeration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Passive%20Enumeration/Banner%20Grabbing/" title="Banner Grabbing" class="md-nav__link">
+      Banner Grabbing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Passive%20Enumeration/Google%20Hacking/" title="Google Hacking" class="md-nav__link">
+      Google Hacking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Passive%20Enumeration/Netcraft/" title="Netcraft" class="md-nav__link">
+      Netcraft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Passive%20Enumeration/Recon-ng/" title="Recon ng" class="md-nav__link">
+      Recon ng
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Passive%20Enumeration/WHOIS/" title="WHOIS" class="md-nav__link">
+      WHOIS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-4" type="checkbox" id="nav-3-3-4">
+    
+    <label class="md-nav__link" for="nav-3-3-4">
+      Techniques
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-4">
+        Techniques
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Browser%20Forensics/" title="Browser Forensics" class="md-nav__link">
+      Browser Forensics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Curl%20Telnet/" title="Curl Telnet" class="md-nav__link">
+      Curl Telnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/DLLs/" title="DLLs" class="md-nav__link">
+      DLLs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Data%20Recovery/" title="Data Recovery" class="md-nav__link">
+      Data Recovery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/File%20Transfers/" title="File Transfers" class="md-nav__link">
+      File Transfers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Interesting%20Files/" title="Interesting Files" class="md-nav__link">
+      Interesting Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Jenkins/" title="Jenkins Pentesting Notes (gquere)" class="md-nav__link">
+      Jenkins Pentesting Notes (gquere)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Linux%20Backdoors%20and%20Rootkits/" title="Linux Backdoors and Rootkits" class="md-nav__link">
+      Linux Backdoors and Rootkits
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Malicious%20Desktop%20Shortcuts/" title="Malicious Desktop Shortcuts" class="md-nav__link">
+      Malicious Desktop Shortcuts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Post%20Directory%20Traversal%20Enumeration/" title="Post Directory Traversal Enumeration" class="md-nav__link">
+      Post Directory Traversal Enumeration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Powershell%20Port%20Scanning/" title="Powershell Port Scanning" class="md-nav__link">
+      Powershell Port Scanning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Reviewing%20a%20URL/" title="Reviewing a URL" class="md-nav__link">
+      Reviewing a URL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/SQL%20Queries/" title="SQL Queries" class="md-nav__link">
+      SQL Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Techniques/Whois%20Exfil/" title="Whois Exfil" class="md-nav__link">
+      Whois Exfil
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-5" type="checkbox" id="nav-3-3-5">
+    
+    <label class="md-nav__link" for="nav-3-3-5">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-5">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Tools/IPTables/" title="IPTables" class="md-nav__link">
+      IPTables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Tools/Linux%20Enumeration/" title="Linux Enumeration" class="md-nav__link">
+      Linux Enumeration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Tools/Ncat/" title="Ncat" class="md-nav__link">
+      Ncat
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Tools/Netcat/" title="Netcat" class="md-nav__link">
+      Netcat
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Tools/TCPDump/" title="TCPDump" class="md-nav__link">
+      TCPDump
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Tools/Wireshark/" title="Wireshark" class="md-nav__link">
+      Wireshark
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-6" type="checkbox" id="nav-3-3-6">
+    
+    <label class="md-nav__link" for="nav-3-3-6">
+      Training
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-6">
+        Training
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Training/OSCP-Like%20VMs/" title="OSCP Like VMs" class="md-nav__link">
+      OSCP Like VMs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Penetration%20Testing/Training/Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" checked>
+    
+    <label class="md-nav__link" for="nav-3-4">
+      Programming
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        Programming
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4-1" type="checkbox" id="nav-3-4-1">
+    
+    <label class="md-nav__link" for="nav-3-4-1">
+      Bash
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-4-1">
+        Bash
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Bash/Bash%20Linting/" title="Bash Linting" class="md-nav__link">
+      Bash Linting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4-2" type="checkbox" id="nav-3-4-2" checked>
+    
+    <label class="md-nav__link" for="nav-3-4-2">
+      Cheat Sheets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-4-2">
+        Cheat Sheets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Python
+      </label>
+    
+    <a href="./" title="Python" class="md-nav__link md-nav__link--active">
+      Python
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installers" class="md-nav__link">
+    Installers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    Data Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containers-contains" class="md-nav__link">
+    Containers (contains)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keywords-identifiers" class="md-nav__link">
+    Keywords &amp; Identifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arithmetic-operators" class="md-nav__link">
+    Arithmetic Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-operators" class="md-nav__link">
+    Assignment Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relational-operators" class="md-nav__link">
+    Relational Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    Logical Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-membership-operators" class="md-nav__link">
+    Identity &amp; Membership Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bitwise-operators" class="md-nav__link">
+    Bitwise Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-conversions" class="md-nav__link">
+    Type Conversions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-input" class="md-nav__link">
+    Print &amp; Input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting" class="md-nav__link">
+    Formatting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequences-ordered-sets" class="md-nav__link">
+    Sequences (Ordered Sets)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-sequences" class="md-nav__link">
+    Binary Sequences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-sets" class="md-nav__link">
+    Mapping &amp; Sets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    Conditional Statements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iterative-loop-statement" class="md-nav__link">
+    Iterative Loop Statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-loop-statement" class="md-nav__link">
+    Conditional Loop Statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generic-operations-on-containers" class="md-nav__link">
+    Generic Operations on Containers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-operations" class="md-nav__link">
+    String Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-operations" class="md-nav__link">
+    List Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-operations" class="md-nav__link">
+    Dictionary Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-operations" class="md-nav__link">
+    Set Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lambda" class="md-nav__link">
+    Lambda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-objects" class="md-nav__link">
+    Classes &amp; Objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules-packages" class="md-nav__link">
+    Modules &amp; Packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors-exceptions" class="md-nav__link">
+    Errors &amp; Exceptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math" class="md-nav__link">
+    Math
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4-3" type="checkbox" id="nav-3-4-3">
+    
+    <label class="md-nav__link" for="nav-3-4-3">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-4-3">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Python/Catching%20Exceptions%20Function/" title="Function to catch exceptions in Python" class="md-nav__link">
+      Function to catch exceptions in Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Python/Easy%20Projects/" title="Easy Projects" class="md-nav__link">
+      Easy Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Python/Keylogger/" title="Keylogger" class="md-nav__link">
+      Keylogger
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      System Administration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        System Administration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5-1" type="checkbox" id="nav-3-5-1">
+    
+    <label class="md-nav__link" for="nav-3-5-1">
+      Applications and Services
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-5-1">
+        Applications and Services
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Applications%20and%20Services/Code/" title="Installing [Code-Server](https://github.com/cdr/code-server) on an LXC Ubuntu 18.04 container" class="md-nav__link">
+      Installing [Code-Server](https://github.com/cdr/code-server) on an LXC Ubuntu 18.04 container
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Applications%20and%20Services/Guacamole/" title="Guacamole" class="md-nav__link">
+      Guacamole
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Applications%20and%20Services/Passwordstore/" title="Passwordstore" class="md-nav__link">
+      Passwordstore
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5-2" type="checkbox" id="nav-3-5-2">
+    
+    <label class="md-nav__link" for="nav-3-5-2">
+      Cheat Sheets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-5-2">
+        Cheat Sheets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Cheat%20Sheets/Linux%20Networking/" title="Linux Networking" class="md-nav__link">
+      Linux Networking
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5-3" type="checkbox" id="nav-3-5-3">
+    
+    <label class="md-nav__link" for="nav-3-5-3">
+      Hardware and Infrastructure
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-5-3">
+        Hardware and Infrastructure
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Hardware%20and%20Infrastructure/Hardening/" title="Hardening" class="md-nav__link">
+      Hardening
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Hardware%20and%20Infrastructure/Hardware/" title="Hardware" class="md-nav__link">
+      Hardware
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5-4" type="checkbox" id="nav-3-5-4">
+    
+    <label class="md-nav__link" for="nav-3-5-4">
+      Linux
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-5-4">
+        Linux
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Bash%20Set-Title%20Function/" title="If you're forced to use `gnome-terminal`" class="md-nav__link">
+      If you're forced to use `gnome-terminal`
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Books/" title="Books" class="md-nav__link">
+      Books
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Disabling%20Ubuntu%20Telemetry/" title="Disabling Ubuntu Telemetry" class="md-nav__link">
+      Disabling Ubuntu Telemetry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Elantech%20Touchpad%20Fix/" title="Elantech Touchpad Fix" class="md-nav__link">
+      Elantech Touchpad Fix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Github%20Pages%20MkDocs/" title="Github Pages MkDocs" class="md-nav__link">
+      Github Pages MkDocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/LD_PRELOAD/" title="LD_PRELOAD Whitelisting" class="md-nav__link">
+      LD_PRELOAD Whitelisting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Linux%20To-Do/" title="Linux To-Do" class="md-nav__link">
+      Linux To-Do
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Logging/" title="Logging" class="md-nav__link">
+      Logging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Luks%20Setup/" title="Luks Setup" class="md-nav__link">
+      Luks Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/MATE%20Configuration%20Import/" title="MATE Configuration Import" class="md-nav__link">
+      MATE Configuration Import
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Network%20Troubleshooting/" title="Network Troubleshooting" class="md-nav__link">
+      Network Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Remove%20%5EM%5EM/" title="Remove ^M^M" class="md-nav__link">
+      Remove ^M^M
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Reverse%20SSH%20Tunnel/" title="Reverse SSH Tunnel" class="md-nav__link">
+      Reverse SSH Tunnel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/TurnKey%20Linux%20Template%20Fix/" title="Making TurnKey LXC containers run as unprivileged" class="md-nav__link">
+      Making TurnKey LXC containers run as unprivileged
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/Ubuntu%20Gnome%20Clean/" title="Ubuntu Gnome Settings" class="md-nav__link">
+      Ubuntu Gnome Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/XFCE%20Keybind%20Commands/" title="XFCE Keybind Commands" class="md-nav__link">
+      XFCE Keybind Commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/YoutubeDL/" title="YoutubeDL" class="md-nav__link">
+      YoutubeDL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Linux/ZFS/" title="ZFS" class="md-nav__link">
+      ZFS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5-5" type="checkbox" id="nav-3-5-5">
+    
+    <label class="md-nav__link" for="nav-3-5-5">
+      Resources
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-5-5">
+        Resources
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Resources/Awesome%20Selfhosted/" title="Awesome Selfhosted" class="md-nav__link">
+      Awesome Selfhosted
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Resources/Awesome%20Sysadmin/" title="Awesome Sysadmin" class="md-nav__link">
+      Awesome Sysadmin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../System%20Administration/Resources/Random/" title="Random resources to be sorted later" class="md-nav__link">
+      Random resources to be sorted later
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installers" class="md-nav__link">
+    Installers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    Data Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containers-contains" class="md-nav__link">
+    Containers (contains)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keywords-identifiers" class="md-nav__link">
+    Keywords &amp; Identifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arithmetic-operators" class="md-nav__link">
+    Arithmetic Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-operators" class="md-nav__link">
+    Assignment Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relational-operators" class="md-nav__link">
+    Relational Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    Logical Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-membership-operators" class="md-nav__link">
+    Identity &amp; Membership Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bitwise-operators" class="md-nav__link">
+    Bitwise Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-conversions" class="md-nav__link">
+    Type Conversions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-input" class="md-nav__link">
+    Print &amp; Input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting" class="md-nav__link">
+    Formatting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequences-ordered-sets" class="md-nav__link">
+    Sequences (Ordered Sets)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-sequences" class="md-nav__link">
+    Binary Sequences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-sets" class="md-nav__link">
+    Mapping &amp; Sets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    Conditional Statements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iterative-loop-statement" class="md-nav__link">
+    Iterative Loop Statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-loop-statement" class="md-nav__link">
+    Conditional Loop Statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generic-operations-on-containers" class="md-nav__link">
+    Generic Operations on Containers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-operations" class="md-nav__link">
+    String Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-operations" class="md-nav__link">
+    List Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionary-operations" class="md-nav__link">
+    Dictionary Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-operations" class="md-nav__link">
+    Set Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lambda" class="md-nav__link">
+    Lambda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes-objects" class="md-nav__link">
+    Classes &amp; Objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules-packages" class="md-nav__link">
+    Modules &amp; Packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors-exceptions" class="md-nav__link">
+    Errors &amp; Exceptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math" class="md-nav__link">
+    Math
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/DirWalk/site/edit/master/docs/wiki/Programming/Cheat Sheets/Python.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="python">Python</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<table>
+<thead>
+<tr>
+<th><a href="#installers">Installers</a></th>
+<th><a href="#data-types">Data Types</a></th>
+<th><a href="#containers-contains">Containers</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#keywords-identifiers">Keywords &amp; Identifiers</a></td>
+<td><a href="#arithmetic-operators">Arithmetic Operators</a></td>
+<td><a href="#assignment-operators">Assignment Operators</a></td>
+</tr>
+<tr>
+<td><a href="#relational-operators">Relational Operators</a></td>
+<td><a href="#logical-operators">Logical Operators</a></td>
+<td><a href="#identity-membership-operators">Identity &amp; Membership Operators</a></td>
+</tr>
+<tr>
+<td><a href="#bitwise-operators">Bitwise Operators</a></td>
+<td><a href="#type-conversions">Type Conversions</a></td>
+<td><a href="#print-input">Print &amp; Input</a></td>
+</tr>
+<tr>
+<td><a href="#formatting">Formatting</a></td>
+<td><a href="#sequences-ordered-sets">Sequences (Ordered Sets)</a></td>
+<td><a href="#binary-sequences">Binary Sequences</a></td>
+</tr>
+<tr>
+<td><a href="#mapping-sets">Mapping &amp; Sets</a></td>
+<td><a href="#conditional-statements">Conditional Statements</a></td>
+<td><a href="#iterative-loop-statement">Iterative Loop Statement</a></td>
+</tr>
+<tr>
+<td><a href="#conditional-loop-statement">Conditional Loop Statement</a></td>
+<td><a href="#functions">Functions</a></td>
+<td><a href="#generic-operations-on-containers">Generic Operations on Containers</a></td>
+</tr>
+<tr>
+<td><a href="#string-operations">String Operations</a></td>
+<td><a href="#list-operations">List Operations</a></td>
+<td><a href="#dictionary-operations">Dictionary Operations</a></td>
+</tr>
+<tr>
+<td><a href="#set-operations">Set Operations</a></td>
+<td><a href="#lambda">Lambda</a></td>
+<td><a href="#classes-objects">Classes &amp; Objects</a></td>
+</tr>
+<tr>
+<td><a href="#modules-packages">Modules &amp; Packages</a></td>
+<td><a href="#errors-exceptions">Errors &amp; Exceptions</a></td>
+<td><a href="#math">Math</a></td>
+</tr>
+<tr>
+<td><a href="#files">Files</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="installers">Installers</h2>
+<p><a href="https://python.tutorials24x7.com/blog/how-to-install-python-38-on-windows">Python 3.8 on Windows</a><br />
+<a href="https://python.tutorials24x7.com/blog/how-to-install-python-3-8-on-ubuntu-1804-lts">Python 3.8 On Ubuntu</a><br />
+<a href="https://python.tutorials24x7.com/blog/how-to-install-pycharm-for-python-on-windows">PyCharm on Windows</a><br />
+<a href="https://python.tutorials24x7.com/blog/how-to-install-pycharm-for-python-on-ubuntu">PyCharm on Ubuntu</a><br />
+<a href="https://python.tutorials24x7.com/blog/how-to-install-visual-studio-code-for-python-on-windows">Visual Studio Code on Windows</a><br />
+<a href="https://python.tutorials24x7.com/blog/how-to-install-visual-studio-code-for-python-on-ubuntu">Visual Studio Code on Ubuntu</a><br />
+<a href="https://python.tutorials24x7.com/blog/how-to-install-eclipse-for-python-on-windows">Eclipse on Windows</a><br />
+<a href="https://python.tutorials24x7.com/blog/how-to-install-eclipse-for-python-on-ubuntu">Eclipse on Ubuntu</a>  </p>
+<h2 id="data-types">Data Types</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Base Data Types</span>
+<span class="n">Numeric</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="nb">complex</span>
+<span class="n">Boolean</span><span class="p">:</span> <span class="nb">bool</span>
+
+<span class="c1"># Container Data Types</span>
+<span class="n">Text</span><span class="p">:</span> <span class="nb">str</span>
+<span class="n">Sequence</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">,</span> <span class="nb">range</span>
+<span class="n">Mapping</span><span class="p">:</span> <span class="nb">dict</span>
+<span class="n">Set</span><span class="p">:</span> <span class="nb">set</span><span class="p">,</span> <span class="nb">frozenset</span>
+<span class="n">Binary</span> <span class="n">Sequence</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">,</span> <span class="nb">memoryview</span>
+
+<span class="c1"># Data Examples</span>
+<span class="nb">int</span><span class="p">:</span> <span class="mi">12321</span><span class="p">,</span> <span class="nb">float</span><span class="p">:</span> <span class="mf">12.342</span><span class="p">,</span> <span class="nb">complex</span><span class="p">:</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">12</span><span class="n">j</span>
+<span class="nb">bool</span><span class="p">:</span> <span class="kc">True</span>
+<span class="nb">str</span><span class="p">:</span> <span class="s2">&quot;Hello Python&quot;</span>
+<span class="nb">list</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">],</span> <span class="nb">tuple</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">),</span> <span class="nb">range</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">dict</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;Rock&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span> <span class="p">:</span> <span class="mi">18</span><span class="p">}</span>
+<span class="nb">set</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">},</span> <span class="nb">frozenset</span><span class="p">:</span> <span class="nb">frozenset</span><span class="p">({</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">})</span>
+<span class="nb">bytes</span><span class="p">:</span> <span class="sa">b</span><span class="s2">&quot;ABC&quot;</span><span class="p">,</span> <span class="nb">bytearray</span><span class="p">:</span> <span class="nb">bytearray</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span> <span class="nb">memoryview</span><span class="p">:</span> <span class="nb">memoryview</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Data Range</span>
+<span class="nb">int</span><span class="p">:</span> <span class="n">unbounded</span>
+<span class="nb">float</span><span class="p">:</span> <span class="mf">2.2250738585072014e-308</span> <span class="n">to</span> <span class="mf">1.7976931348623157e+308</span>
+</code></pre></div>
+
+
+<h2 id="containers-contains">Containers (<em>contains</em>)</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Containers having method __contains__</span>
+<span class="nb">str</span><span class="p">:</span> <span class="s2">&quot;Hello Python&quot;</span>
+<span class="nb">list</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">],</span>
+<span class="nb">tuple</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">),</span>
+<span class="nb">range</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">dict</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;Rock&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span> <span class="p">:</span> <span class="mi">18</span><span class="p">}</span>
+<span class="nb">set</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">},</span>
+<span class="nb">frozenset</span><span class="p">:</span> <span class="nb">frozenset</span><span class="p">({</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">})</span>
+<span class="nb">bytes</span><span class="p">:</span> <span class="sa">b</span><span class="s2">&quot;ABC&quot;</span>
+<span class="nb">bytearray</span><span class="p">:</span> <span class="nb">bytearray</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="c1"># Immutable: str, tuple, frozenset, bytes</span>
+<span class="c1"># Access the contained objects</span>
+<span class="c1"># Iterate over contained objects</span>
+
+<span class="c1"># Supports in operator</span>
+<span class="n">tempStr</span> <span class="o">=</span> <span class="s2">&quot;Hello Python&quot;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;llo&quot;</span> <span class="ow">in</span> <span class="n">tempStr</span> <span class="p">)</span>
+<span class="c1"># Output: True</span>
+
+<span class="c1"># Test containers</span>
+<span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Container</span>
+<span class="n">tempStr</span> <span class="o">=</span> <span class="s2">&quot;Hello Python&quot;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tempStr</span><span class="p">,</span> <span class="n">Container</span><span class="p">)</span> <span class="p">)</span>
+<span class="c1"># Output: True</span>
+</code></pre></div>
+
+
+<h2 id="keywords-identifiers">Keywords &amp; Identifiers</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Keywords are reserved words in Python</span>
+<span class="c1"># Keywords are case sensitive</span>
+<span class="c1"># Keywords: if, else, elif, for, while, in, as, is, and, or, not, with, from, break, pass, continue, return</span>
+<span class="c1"># Keywords: class, finally, try, assert, def, nonlocal, del, yield</span>
+<span class="c1"># Keywords: import, global, lambda, async, except, await, raise, None, True, False</span>
+
+<span class="c1"># Identifier can be used as name of variables, classes, or functions</span>
+
+<span class="c1"># Identifier Rules</span>
+<span class="c1"># Can have a to z, A to Z, 0 to 9, or _ underscore</span>
+<span class="c1"># Cannot start with a digit</span>
+<span class="c1"># Cannot use special characters including !, @, #, $, %</span>
+<span class="c1"># Keywords cannot be used as Identifier</span>
+<span class="c1"># Can be of any length</span>
+<span class="c1"># Identifiers are case sensitive</span>
+
+<span class="c1"># Identifier Examples</span>
+<span class="c1"># Correct: alpha, _bravo, alpha12, alpha_bravo, alpha_123, this_is_a_long_name</span>
+<span class="c1"># Correct: alpha, Alpha, aLpha, and alphA : all are different</span>
+<span class="c1"># Wrong: 12alpha, @alpha, al!pha, else, while</span>
+</code></pre></div>
+
+
+<h2 id="arithmetic-operators">Arithmetic Operators</h2>
+<div class="codehilite"><pre><span></span><code> <span class="o">+</span> <span class="p">:</span> <span class="n">Addition</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
+ <span class="o">-</span> <span class="p">:</span> <span class="n">Subtraction</span><span class="p">:</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">-</span> <span class="n">c</span>
+ <span class="o">*</span> <span class="p">:</span> <span class="n">Multiplication</span><span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">*</span> <span class="p">(</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span>
+ <span class="o">/</span> <span class="p">:</span> <span class="n">Division</span><span class="p">:</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">,</span> <span class="p">(</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="p">)</span> <span class="o">/</span> <span class="n">c</span>
+ <span class="o">%</span> <span class="p">:</span> <span class="n">Modulus</span><span class="p">:</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
+ <span class="o">**</span> <span class="p">:</span> <span class="n">Exponentiation</span><span class="p">:</span> <span class="n">a</span> <span class="o">**</span> <span class="n">b</span>
+ <span class="o">//</span> <span class="p">:</span> <span class="n">Floor</span> <span class="n">division</span><span class="p">:</span> <span class="n">a</span> <span class="o">//</span> <span class="n">b</span>
+</code></pre></div>
+
+
+<h2 id="assignment-operators">Assignment Operators</h2>
+<div class="codehilite"><pre><span></span><code> <span class="o">=</span> <span class="p">:</span> <span class="n">Simple</span><span class="p">:</span> <span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+ <span class="o">+=</span> <span class="p">:</span> <span class="n">Increment</span><span class="p">:</span> <span class="n">a</span> <span class="o">+=</span> <span class="n">b</span> <span class="o">~</span> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+ <span class="o">-=</span> <span class="p">:</span> <span class="n">Decrement</span><span class="p">:</span> <span class="n">a</span> <span class="o">-=</span> <span class="n">b</span> <span class="o">~</span> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+ <span class="o">*=</span> <span class="p">:</span> <span class="n">Multiplication</span><span class="p">:</span> <span class="n">a</span> <span class="o">*=</span> <span class="n">b</span> <span class="o">~</span> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+ <span class="o">/=</span> <span class="p">:</span> <span class="n">Division</span><span class="p">:</span> <span class="n">a</span> <span class="o">/=</span> <span class="n">b</span> <span class="o">~</span> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+ <span class="o">%=</span> <span class="p">:</span> <span class="n">Modulus</span><span class="p">:</span> <span class="n">a</span> <span class="o">%=</span> <span class="n">b</span> <span class="o">~</span> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
+ <span class="o">**=</span> <span class="p">:</span> <span class="n">Exponentiation</span><span class="p">:</span><span class="n">a</span> <span class="o">**=</span> <span class="n">b</span> <span class="o">~</span> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">**</span> <span class="n">b</span>
+ <span class="o">//=</span> <span class="p">:</span> <span class="n">Floor</span> <span class="n">division</span><span class="p">:</span> <span class="n">a</span> <span class="o">//=</span> <span class="n">b</span> <span class="o">~</span> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">//</span> <span class="n">b</span>
+</code></pre></div>
+
+
+<h2 id="relational-operators">Relational Operators</h2>
+<div class="codehilite"><pre><span></span><code> <span class="o">==</span> <span class="p">:</span> <span class="n">Equal</span><span class="p">:</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span>
+ <span class="o">!=</span> <span class="p">:</span> <span class="n">Not</span> <span class="n">equal</span><span class="p">:</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span>
+ <span class="o">&gt;</span> <span class="p">:</span> <span class="n">Greater</span> <span class="n">than</span><span class="p">:</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>
+ <span class="o">&lt;</span> <span class="p">:</span> <span class="n">Less</span> <span class="n">than</span><span class="p">:</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span>
+ <span class="o">&gt;=</span> <span class="p">:</span> <span class="n">Greater</span> <span class="n">than</span> <span class="ow">or</span> <span class="n">equal</span> <span class="n">to</span><span class="p">:</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span>
+ <span class="o">&lt;=</span> <span class="p">:</span> <span class="n">Less</span> <span class="n">than</span> <span class="ow">or</span> <span class="n">equal</span> <span class="n">to</span><span class="p">:</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">b</span>
+</code></pre></div>
+
+
+<h2 id="logical-operators">Logical Operators</h2>
+<div class="codehilite"><pre><span></span><code> <span class="ow">and</span> <span class="p">:</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">25</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">35</span>
+ <span class="ow">or</span> <span class="p">:</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">25</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">35</span>
+ <span class="ow">not</span> <span class="p">:</span> <span class="ow">not</span><span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">25</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">35</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="identity-membership-operators">Identity &amp; Membership Operators</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Identity Operators - Tests for same objects</span>
+ <span class="ow">is</span> <span class="p">:</span> <span class="n">x</span> <span class="ow">is</span> <span class="n">y</span>
+ <span class="ow">is</span> <span class="ow">not</span> <span class="p">:</span> <span class="n">x</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">y</span>
+
+<span class="c1"># Membership Operators - Tests for sequence in an object</span>
+ <span class="ow">in</span> <span class="p">:</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">y</span>
+ <span class="ow">not</span> <span class="ow">in</span> <span class="p">:</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">y</span>
+</code></pre></div>
+
+
+<h2 id="bitwise-operators">Bitwise Operators</h2>
+<div class="codehilite"><pre><span></span><code> <span class="o">&amp;</span> <span class="p">:</span> <span class="n">AND</span> <span class="p">:</span> <span class="n">Copies</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">both</span> <span class="n">bits</span> <span class="n">are</span> <span class="mi">1</span><span class="p">,</span> <span class="k">else</span> <span class="n">use</span> <span class="mi">0</span>
+ <span class="o">|</span> <span class="p">:</span> <span class="n">OR</span> <span class="p">:</span> <span class="n">Copies</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">either</span> <span class="n">of</span> <span class="n">the</span> <span class="n">bits</span> <span class="ow">is</span> <span class="mi">1</span><span class="p">,</span> <span class="k">else</span> <span class="n">use</span> <span class="mi">0</span>
+ <span class="o">^</span> <span class="p">:</span> <span class="n">XOR</span> <span class="p">:</span> <span class="n">Copies</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">only</span> <span class="n">one</span> <span class="n">of</span> <span class="n">the</span> <span class="n">bits</span> <span class="ow">is</span> <span class="mi">1</span><span class="p">,</span> <span class="k">else</span> <span class="n">use</span> <span class="mi">0</span>
+ <span class="o">~</span> <span class="p">:</span> <span class="n">NOT</span> <span class="p">:</span> <span class="n">Simply</span> <span class="n">flip</span> <span class="n">the</span> <span class="n">bits</span>
+ <span class="o">&lt;&lt;</span> <span class="p">:</span> <span class="n">left</span> <span class="n">shift</span> <span class="p">:</span> <span class="n">Shift</span> <span class="n">left</span> <span class="ow">and</span> <span class="n">fill</span> <span class="n">by</span> <span class="n">zero</span> <span class="n">on</span> <span class="n">right</span>
+ <span class="o">&gt;&gt;</span> <span class="p">:</span> <span class="n">right</span> <span class="n">shift</span> <span class="p">:</span> <span class="n">Shift</span> <span class="n">right</span> <span class="ow">and</span> <span class="n">fill</span> <span class="n">by</span> <span class="n">zero</span> <span class="n">on</span> <span class="n">left</span>
+</code></pre></div>
+
+
+<h2 id="type-conversions">Type Conversions</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Integers</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>   <span class="c1"># 121</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mf">21.21</span><span class="p">)</span> <span class="c1"># 21</span>
+<span class="n">c</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;151&quot;</span><span class="p">)</span> <span class="c1"># 151</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;15f&quot;</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span> <span class="c1"># 351</span>
+
+<span class="c1"># Floats</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;5.25e5&quot;</span><span class="p">)</span> <span class="c1"># 525000.0</span>
+
+<span class="c1"># Booleans</span>
+<span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;abc&#39;</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1"># False</span>
+<span class="n">e</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="c1"># True</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="c1"># True</span>
+
+<span class="c1"># Strings</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span> <span class="c1"># hello</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">51</span><span class="p">)</span> <span class="c1"># 51</span>
+<span class="n">c</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mf">25.25</span><span class="p">)</span>  <span class="c1"># 25.25</span>
+</code></pre></div>
+
+
+<h2 id="print-input">Print &amp; Input</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Input</span>
+<span class="c1"># Read input as string from console</span>
+<span class="c1"># Convert the input string accordingly</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">]</span>
+<span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter from 1 to 4:&quot;</span><span class="p">)</span>
+
+<span class="n">choice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="n">choice</span> <span class="p">)</span>
+
+<span class="k">if</span> <span class="n">choice</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">choice</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Wrong choice&quot;</span> <span class="p">)</span>
+<span class="k">else</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[</span><span class="n">choice</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="p">)</span>
+
+<span class="c1"># Print</span>
+
+<span class="c1"># print literal values</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Hello Python !!&quot;</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="mi">15</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="mf">25.25</span> <span class="p">)</span>
+
+<span class="c1"># print variables</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Ricky&quot;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">name</span> <span class="p">)</span>
+
+<span class="c1"># print expressions</span>
+<span class="n">start</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">end</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span> <span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="formatting">Formatting</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1">## Conversion Types</span>
+<span class="n">d</span><span class="p">,</span> <span class="n">i</span> <span class="o">-</span> <span class="n">Signed</span> <span class="n">integer</span> <span class="n">decimal</span><span class="p">,</span> <span class="n">i</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">by</span> <span class="nb">format</span> <span class="n">method</span>
+<span class="n">o</span> <span class="o">-</span> <span class="n">Unsigned</span> <span class="n">octal</span><span class="p">,</span> <span class="n">u</span> <span class="o">-</span> <span class="n">Unsigned</span> <span class="n">decimal</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">X</span> <span class="o">-</span> <span class="n">Unsigned</span> <span class="n">hexadecimal</span><span class="p">,</span> <span class="n">leading</span> <span class="mi">0</span><span class="n">x</span> <span class="ow">or</span> <span class="mi">0</span><span class="n">X</span>
+<span class="n">e</span><span class="p">,</span> <span class="n">E</span> <span class="o">-</span> <span class="n">Floating</span> <span class="n">point</span> <span class="n">exponential</span> <span class="nb">format</span>
+<span class="n">f</span><span class="p">,</span> <span class="n">F</span> <span class="o">-</span> <span class="n">Floating</span> <span class="n">point</span> <span class="n">decimal</span> <span class="nb">format</span>
+<span class="n">c</span> <span class="o">-</span> <span class="n">Single</span> <span class="n">character</span>
+<span class="n">r</span> <span class="o">-</span> <span class="n">String</span> <span class="p">(</span><span class="n">converts</span> <span class="n">python</span> <span class="nb">object</span> <span class="n">using</span> <span class="nb">repr</span><span class="p">())</span>
+<span class="n">s</span> <span class="o">-</span> <span class="n">String</span> <span class="p">(</span><span class="n">converts</span> <span class="n">python</span> <span class="nb">object</span> <span class="n">using</span>  <span class="nb">str</span><span class="p">())</span>
+
+<span class="c1"># String and Number</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;</span><span class="si">%(name)s</span><span class="s2">, </span><span class="si">%(age)d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span> <span class="p">)</span> <span class="c1"># Joe, 25</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;</span><span class="si">{0:s}</span><span class="s1">, </span><span class="si">{1:d}</span><span class="s1">&#39;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="mi">25</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># Joe, 25</span>
+
+<span class="c1"># Fixed digit numbers</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;</span><span class="si">%(name)s</span><span class="s2">, </span><span class="si">%(age)03d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span> <span class="p">)</span> <span class="c1"># Joe, 025</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;</span><span class="si">{0:s}</span><span class="s1">, </span><span class="si">{1:03d}</span><span class="s1">&#39;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="mi">25</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># Joe, 025</span>
+
+<span class="c1"># Floating point</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;</span><span class="si">%(name)s</span><span class="s2">, </span><span class="si">%(weight)3.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="s2">&quot;weight&quot;</span><span class="p">:</span> <span class="mf">25.2456</span><span class="p">}</span> <span class="p">)</span> <span class="c1"># Joe, 25.25</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;</span><span class="si">{0:s}</span><span class="s1">, </span><span class="si">{1:3.2f}</span><span class="s1">&#39;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="mf">25.2456</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># Joe, 25.25      </span>
+</code></pre></div>
+
+
+<h2 id="sequences-ordered-sets">Sequences (Ordered Sets)</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># string</span>
+<span class="c1"># ordered, indexed, unchangeable (immutable), allows duplicates</span>
+<span class="n">hello</span> <span class="o">=</span> <span class="s2">&quot;Hello Python !!&quot;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># H</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># 0</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># syntax error, range not allowed</span>
+<span class="n">hello</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;K&quot;</span> <span class="c1"># syntax error, immutable, item assignment not allowed</span>
+
+<span class="c1"># list</span>
+<span class="c1"># ordered, indexed, changeable (mutable), allows duplicates</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># apple</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># orange</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># [&#39;banana&#39;, &#39;orange&#39;]</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># [&#39;apple&#39;, &#39;banana&#39;]</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># [&#39;banana&#39;, &#39;orange&#39;]</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="p">)</span> <span class="c1"># [&#39;banana&#39;, &#39;orange&#39;, &#39;grapes&#39;]</span>
+
+<span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;banana&quot;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># banana</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># banana</span>
+
+<span class="c1"># tuple</span>
+<span class="c1"># ordered, indexed, unchangeable (immutable), allows duplicates</span>
+<span class="n">vehicles</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;car&quot;</span><span class="p">,</span> <span class="s2">&quot;bus&quot;</span><span class="p">,</span> <span class="s2">&quot;truck&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">vehicles</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># car</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">vehicles</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># bus</span>
+
+<span class="n">vehicles</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;bicycle&quot;</span> <span class="c1"># syntax error, immutable, item assignment not allowed</span>
+
+<span class="c1"># range</span>
+<span class="c1"># generates an immutable sequence of numbers over time</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># 2</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># 4</span>
+</code></pre></div>
+
+
+<h2 id="binary-sequences">Binary Sequences</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># bytes</span>
+<span class="c1"># ordered, indexed, unchangeable (immutable), allows duplicates</span>
+<span class="n">hello1</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;Hello Python !!&quot;</span>
+<span class="n">hello2</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="s1">&#39;Hello Python !!&#39;</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># 72</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello2</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># 111</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello1</span> <span class="p">)</span> <span class="c1"># b&#39;Hello Python !!&#39;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello1</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># Hello Python !!</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># syntax error, range not allowed</span>
+<span class="n">hello</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;K&quot;</span> <span class="c1"># syntax error, immutable, item assignment not allowed</span>
+
+<span class="c1"># bytearray</span>
+<span class="n">hello1</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span> <span class="sa">b</span><span class="s2">&quot;Hello Python !!&quot;</span> <span class="p">)</span>
+<span class="n">hello2</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span> <span class="s2">&quot;Hello Python !!&quot;</span><span class="p">,</span> <span class="s2">&quot;utf8&quot;</span> <span class="p">)</span>
+<span class="n">hello3</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span> <span class="p">[</span><span class="mi">72</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello1</span> <span class="p">)</span> <span class="c1"># bytearray(b&#39;Hello Python !!&#39;)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello2</span> <span class="p">)</span> <span class="c1"># bytearray(b&#39;Hello Python !!&#39;)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello3</span> <span class="p">)</span> <span class="c1"># bytearray(b&#39;Hello&#39;)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello3</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># Hello</span>
+</code></pre></div>
+
+
+<h2 id="mapping-sets">Mapping &amp; Sets</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># dict</span>
+<span class="c1"># unordered, indexed, changeable (mutable), allows duplicates</span>
+<span class="n">person</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">24</span> <span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># Joe</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># 24</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">)</span> <span class="p">)</span> <span class="c1"># Joe</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span> <span class="p">)</span> <span class="c1"># {&#39;name&#39;: &#39;Joe&#39;, &#39;age&#39;: 24}</span>
+
+<span class="n">person</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Jack&quot;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># Jack</span>
+
+<span class="c1"># convert list of list or tuple to dict</span>
+<span class="n">person1</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;Joe&quot;</span> <span class="p">],</span> <span class="p">[</span> <span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="mi">24</span> <span class="p">]</span> <span class="p">]</span> <span class="p">)</span>
+<span class="n">person2</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span> <span class="p">[</span> <span class="p">(</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;Joe&quot;</span> <span class="p">),</span> <span class="p">(</span> <span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="mi">24</span> <span class="p">)</span> <span class="p">]</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person1</span> <span class="p">)</span> <span class="c1"># {&#39;name&#39;: &#39;Joe&#39;, &#39;age&#39;: 24}</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person2</span> <span class="p">)</span> <span class="c1"># {&#39;name&#39;: &#39;Joe&#39;, &#39;age&#39;: 24}</span>
+
+<span class="c1"># set</span>
+<span class="c1"># unordered, unindexed, changeable (mutable), no duplicates</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># {&#39;apple&#39;, &#39;grapes&#39;, &#39;orange&#39;, &#39;banana&#39;}</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># {&#39;apple&#39;, &#39;grapes&#39;, &#39;banana&#39;, &#39;orange&#39;}</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># syntax error, unsubscriptable</span>
+
+<span class="c1"># convert list or tuple to set</span>
+<span class="n">fruits1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">]</span> <span class="p">)</span>
+<span class="n">fruits2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span> <span class="p">(</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits1</span><span class="p">)</span> <span class="c1"># {&#39;apple&#39;, &#39;orange&#39;, &#39;grapes&#39;, &#39;banana&#39;}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits2</span><span class="p">)</span> <span class="c1"># {&#39;apple&#39;, &#39;orange&#39;, &#39;grapes&#39;, &#39;banana&#39;}</span>
+
+<span class="c1"># frozenset</span>
+<span class="c1"># unordered, unindexed, unchangeable (immutable), no duplicates</span>
+</code></pre></div>
+
+
+<h2 id="conditional-statements">Conditional Statements</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Statement Blocks - if, else and elif</span>
+<span class="c1"># Statement blocks works using indentations</span>
+<span class="c1"># Statement block executed only if given condition is true</span>
+
+<span class="c1"># if</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="s2">&quot;banana&quot;</span> <span class="ow">in</span> <span class="n">fruits</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Found Banana&quot;</span> <span class="p">)</span>
+
+<span class="c1"># else</span>
+<span class="k">if</span> <span class="s2">&quot;banana&quot;</span> <span class="ow">in</span> <span class="n">fruits</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Found Banana&quot;</span> <span class="p">)</span>
+<span class="k">else</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Banana is missing&quot;</span> <span class="p">)</span>
+
+<span class="c1"># elif</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Joe&quot;</span>
+
+<span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Rock&quot;</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Rock is performing now&quot;</span> <span class="p">)</span>
+<span class="k">elif</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Joe&quot;</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Joe is performing now&quot;</span> <span class="p">)</span>
+<span class="k">else</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Stage is free&quot;</span> <span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="iterative-loop-statement">Iterative Loop Statement</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Iterative Loop - for</span>
+<span class="c1"># Statement blocks works using indentations</span>
+<span class="c1"># Statement block executed for each item of container</span>
+
+<span class="c1"># Iterate list</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">]</span>
+
+<span class="c1"># Standard</span>
+<span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="n">fruit</span> <span class="p">)</span>
+
+<span class="c1"># Iterate with index using range</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Fruit </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fruits</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># Iterate with index using enumerate</span>
+<span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fruits</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Fruit </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="n">num</span><span class="p">,</span> <span class="n">name</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># Iterate set</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">}</span>
+
+<span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="n">fruit</span> <span class="p">)</span>
+
+<span class="c1"># Iterate dict</span>
+<span class="n">person</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">24</span> <span class="p">}</span>
+
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">person</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Person </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="n">key</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="conditional-loop-statement">Conditional Loop Statement</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Conditional Loop - while</span>
+<span class="c1"># Statement blocks works using indentations</span>
+<span class="c1"># Statement block executed for each item of container till the condition is true</span>
+
+<span class="c1"># while with condition</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">start</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">factor</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">while</span> <span class="n">start</span> <span class="o">&lt;=</span> <span class="n">limit</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">start</span> <span class="o">*</span> <span class="n">factor</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Multiplied </span><span class="si">{}</span><span class="s2"> by </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="n">start</span><span class="p">,</span> <span class="n">factor</span><span class="p">,</span> <span class="n">result</span> <span class="p">)</span> <span class="p">)</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">start</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="c1"># while with condition and break</span>
+<span class="n">fruits</span>  <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">]</span>
+<span class="n">count</span>   <span class="o">=</span> <span class="nb">len</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span>
+<span class="n">index</span>   <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">count</span> <span class="p">:</span>
+    <span class="k">if</span> <span class="n">fruits</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;orange&quot;</span> <span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Found orange&quot;</span> <span class="p">)</span>
+        <span class="k">break</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">continue</span>
+</code></pre></div>
+
+
+<h2 id="functions">Functions</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Declaration &amp; Definition</span>
+<span class="c1"># def functionName(argument1, argument2, argument3)</span>
+<span class="c1"># Declared using the def keyword</span>
+<span class="c1"># Function name must be a valid identifier</span>
+<span class="c1"># Function can have 0 to n arguments</span>
+<span class="c1"># Function arguments can be literal values, variables (valid identifiers), and expressions</span>
+<span class="c1"># Function is a block of code which runs when it is called</span>
+<span class="c1"># Function block can have multiple statements</span>
+<span class="c1"># Function variables exists within the function blocks during the call</span>
+
+<span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+
+<span class="k">def</span> <span class="nf">getPerson</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span> <span class="p">:</span>
+    <span class="n">person</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="n">age</span> <span class="p">}</span>
+    <span class="k">return</span> <span class="n">person</span>
+
+<span class="c1"># Call</span>
+<span class="c1"># Functions can be called by passing the arguments according to the declaration</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">c</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">subtract</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">getPerson</span><span class="p">(</span><span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Sum - </span><span class="si">{}</span><span class="s2"> plus </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># Sum - 20 plus 50: 70</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Sum - </span><span class="si">{}</span><span class="s2"> plus 50: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="n">b</span><span class="p">,</span> <span class="n">d</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># Sum - 50 plus 50: 100</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Subtraction - </span><span class="si">{}</span><span class="s2"> minus </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">e</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># Subtraction - 50 minus 20: 30</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Person - </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="n">p</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># Person - {&#39;name&#39;: &#39;Joe&#39;, &#39;age&#39;: 75}</span>
+</code></pre></div>
+
+
+<h2 id="generic-operations-on-containers">Generic Operations on Containers</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Containers: str, list, tuple, range, dict, set, frozenset, bytes, bytearray</span>
+<span class="c1"># Uses keys for dictionaries</span>
+
+<span class="c1"># Generic</span>
+<span class="c1"># Items count: len(container) -&gt; Returns items count</span>
+<span class="c1"># Min value: min(container) -&gt; Returns item having minimum value</span>
+<span class="c1"># Max value: max(container) -&gt; Returns item having maximum value</span>
+<span class="c1"># Sorting: sorted(container) -&gt; Returns items in sorted order</span>
+<span class="c1"># Searching: in operator -&gt; item in container, item not in container</span>
+<span class="c1"># Iterate: enumerate(container) -&gt; returns iterator to iterate the container</span>
+<span class="c1"># All true: all(container) -&gt; Returns True if all items evaluates to true</span>
+<span class="c1"># Any one true: any(container) -&gt; Returns True if any one of the items evaluates to true</span>
+
+<span class="c1"># Numeric</span>
+<span class="c1"># Items sum: sum(container) -&gt; Returns sum of all items value, works for containers having numeric items</span>
+
+<span class="c1"># Ordered Sequences</span>
+<span class="c1"># Reversed: reversed(container) -&gt; Returns the items in reversed order</span>
+<span class="c1"># Item index: container.index(val) -&gt; Finds the index of given item value</span>
+</code></pre></div>
+
+
+<h2 id="string-operations">String Operations</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">hello</span>   <span class="o">=</span> <span class="s2">&quot;Hello Python !!&quot;</span>
+<span class="n">fruits</span>  <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">]</span>
+
+<span class="c1"># Split, Join, and Strip - split, join, and strip</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">split</span><span class="p">(</span> <span class="s1">&#39; &#39;</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># Split using space as delimiter -&gt; [&#39;Hello&#39;, &#39;Python&#39;, &#39;!!&#39;]</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;,&#39;</span> <span class="o">.</span> <span class="n">join</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span>  <span class="p">)</span> <span class="c1"># Join using comma as delimiter -&gt; apple,banana,orange,grapes</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># Strips whitespace on left and right -&gt; &#39;Hello Python !!&#39;</span>
+
+<span class="c1"># Searching - startsWith and endsWith</span>
+<span class="c1"># Tests whether sub-string is found</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span> <span class="s2">&quot;He&quot;</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># True -&gt; Without start and end parameters</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span> <span class="s2">&quot;llo&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># True -&gt; With start and end parameters</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span> <span class="s2">&quot;Pyt&quot;</span><span class="p">,</span> <span class="mi">6</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># True -&gt; With start parameter</span>
+
+<span class="c1"># Searching - find and index</span>
+<span class="c1"># Returns starting index if found, find returns -1, index throws exception</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">find</span><span class="p">(</span> <span class="s2">&quot;llo&quot;</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 2 -&gt; Without start and end parameters</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">find</span><span class="p">(</span> <span class="s2">&quot;Pyth&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">11</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 6 -&gt; With start and end parameters</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">index</span><span class="p">(</span> <span class="s2">&quot;llo&quot;</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 2 -&gt; Without start and end parameters</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">index</span><span class="p">(</span> <span class="s2">&quot;Pyth&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">11</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 6 -&gt; With start and end parameters</span>
+
+<span class="c1"># Searching - count</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">count</span><span class="p">(</span> <span class="s2">&quot;Pyth&quot;</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 1 -&gt; Found 1 occurance of Pyth</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">count</span><span class="p">(</span> <span class="s2">&quot;Pyth&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">11</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 1 -&gt;Found 1 occurance of Pyth</span>
+
+<span class="c1"># Case operations - upper, lower, title, swapcase, casefold, and capitalize</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># all uppercase -&gt; HELLO PYTHON !!</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># all lowercase -&gt; hello python !!</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># first letter capital, all words -&gt; Hello Python !!</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">swapcase</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># swap all case -&gt; hELLO pYTHON !!</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">casefold</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># aggressive version of lower, also converts unique unicode characters -&gt; hello python !!</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># first uppercase, all lowercase -&gt; # Hello python !!</span>
+
+<span class="c1"># Alignment - center, ljust, and rjust</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">center</span><span class="p">(</span> <span class="mi">50</span> <span class="p">)</span> <span class="p">)</span>         <span class="c1">#                  Hello Python !!</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">center</span><span class="p">(</span> <span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;#&#39;</span> <span class="p">)</span> <span class="p">)</span>    <span class="c1"># #################Hello Python !!##################</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span> <span class="mi">50</span> <span class="p">)</span> <span class="p">)</span>          <span class="c1"># Hello Python !!</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span> <span class="mi">50</span> <span class="p">)</span> <span class="p">)</span>          <span class="c1">#                                    Hello Python !!</span>
+
+<span class="c1"># partition, encode, zfill</span>
+<span class="c1"># Partition: partition the string, return tuple having before, argument, and after</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span> <span class="s1">&#39;lo &#39;</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># (&#39;Hel&#39;, &#39;lo &#39;, &#39;Python !!&#39;)</span>
+<span class="c1"># Encoding: encodes using given encoding -&gt;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">,</span><span class="n">errors</span><span class="o">=</span><span class="s1">&#39;strict&#39;</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># b&#39;Hello Python !!&#39;</span>
+<span class="c1"># Zero fill: fills the left spaces with zero</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">hello</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span> <span class="mi">50</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 00000000000000000000000000000000000Hello Python !!</span>
+
+<span class="c1"># Formatting</span>
+<span class="n">person</span> <span class="o">=</span> <span class="s2">&quot;Person Name: </span><span class="si">{}</span><span class="s2"> Age: </span><span class="si">{}</span><span class="s2"> Profession: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;Accountant&quot;</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span> <span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="list-operations">List Operations</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">]</span>
+
+<span class="c1"># append, extend, insert, and remove</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="s2">&quot;guava&quot;</span> <span class="p">)</span> <span class="c1"># Appends the item at the end</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;grapes&#39;, &#39;guava&#39;]</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="s2">&quot;guava&quot;</span> <span class="p">)</span> <span class="c1"># Appends the item at the end</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;grapes&#39;, &#39;guava&#39;, &#39;guava&#39;]</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span> <span class="p">[</span> <span class="s2">&quot;litchi&quot;</span><span class="p">,</span> <span class="s2">&quot;watermelon&quot;</span> <span class="p">]</span> <span class="p">)</span> <span class="c1"># Adds multiple items to the set</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;grapes&#39;, &#39;guava&#39;, &#39;guava&#39;, &#39;litchi&#39;, &#39;watermelon&#39;]</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;guava&quot;</span> <span class="p">)</span> <span class="c1"># Adds the item at the given index</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;guava&#39;, &#39;grapes&#39;, &#39;guava&#39;, &#39;guava&#39;, &#39;litchi&#39;, &#39;watermelon&#39;]</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span> <span class="s2">&quot;guava&quot;</span> <span class="p">)</span> <span class="c1"># Removes first matching item</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;grapes&#39;, &#39;guava&#39;, &#39;guava&#39;, &#39;litchi&#39;, &#39;watermelon&#39;]</span>
+
+<span class="c1"># pop, copy, and clear</span>
+<span class="n">poppedItem</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span> <span class="mi">4</span> <span class="p">)</span> <span class="c1"># Removes the item at the given index</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">poppedItem</span> <span class="p">)</span> <span class="c1"># guava</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;grapes&#39;, &#39;guava&#39;, &#39;litchi&#39;, &#39;watermelon&#39;]</span>
+<span class="n">fruitsCopy</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1"># Shallow copy</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruitsCopy</span> <span class="p">)</span> <span class="c1"># [&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;grapes&#39;, &#39;guava&#39;, &#39;litchi&#39;, &#39;watermelon&#39;]</span>
+<span class="n">fruitsCopy</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruitsCopy</span> <span class="p">)</span> <span class="c1"># []</span>
+
+<span class="c1"># sort and reverse</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;apple&#39;, &#39;banana&#39;, &#39;grapes&#39;, &#39;guava&#39;, &#39;litchi&#39;, &#39;orange&#39;, &#39;watermelon&#39;]</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;watermelon&#39;, &#39;orange&#39;, &#39;litchi&#39;, &#39;guava&#39;, &#39;grapes&#39;, &#39;banana&#39;, &#39;apple&#39;]</span>
+
+<span class="c1"># read, update, delete</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># orange</span>
+<span class="n">fruits</span><span class="p">[</span> <span class="mi">1</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;kiwi&quot;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;watermelon&#39;, &#39;kiwi&#39;, &#39;litchi&#39;, &#39;guava&#39;, &#39;grapes&#39;, &#39;banana&#39;, &#39;apple&#39;]</span>
+<span class="k">del</span> <span class="n">fruits</span><span class="p">[</span> <span class="mi">1</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># [&#39;watermelon&#39;, &#39;litchi&#39;, &#39;guava&#39;, &#39;grapes&#39;, &#39;banana&#39;, &#39;apple&#39;]</span>
+</code></pre></div>
+
+
+<h2 id="dictionary-operations">Dictionary Operations</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">person</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="s2">&quot;dob&quot;</span><span class="p">:</span> <span class="s2">&quot;25-11-2000&quot;</span><span class="p">,</span> <span class="s2">&quot;profession&quot;</span><span class="p">:</span> <span class="s2">&quot;Software Developer&quot;</span> <span class="p">}</span>
+
+<span class="c1"># keys, values, and items</span>
+<span class="c1"># returns iterable for iterations</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># dict_keys([&#39;name&#39;, &#39;age&#39;, &#39;dob&#39;, &#39;profession&#39;])</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># dict_values([&#39;Joe&#39;, 24, &#39;25-11-2000&#39;, &#39;Software Developer&#39;])</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="p">)</span> <span class="c1"># dict_items([(&#39;name&#39;, &#39;Joe&#39;), (&#39;age&#39;, 24), (&#39;dob&#39;, &#39;25-11-2000&#39;), (&#39;profession&#39;, &#39;Software Developer&#39;)])</span>
+
+<span class="c1"># pop, popitem, copy, and clear</span>
+<span class="n">poppedItem</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span> <span class="s2">&quot;dob&quot;</span> <span class="p">)</span> <span class="c1"># Removes the item having given key</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">poppedItem</span> <span class="p">)</span> <span class="c1"># 25-11-2000</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span> <span class="p">)</span> <span class="c1"># {&#39;name&#39;: &#39;Joe&#39;, &#39;age&#39;: 24, &#39;profession&#39;: &#39;Software Developer&#39;}</span>
+<span class="n">poppedItem</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">popitem</span><span class="p">()</span> <span class="c1"># Removes the item inserted last</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">poppedItem</span> <span class="p">)</span> <span class="c1"># (&#39;profession&#39;, &#39;Software Developer&#39;)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span> <span class="p">)</span> <span class="c1"># {&#39;name&#39;: &#39;Joe&#39;, &#39;age&#39;: 24}</span>
+<span class="n">personCopy</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1"># Shallow copy</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">personCopy</span> <span class="p">)</span> <span class="c1"># {&#39;name&#39;: &#39;Joe&#39;, &#39;age&#39;: 24}</span>
+
+<span class="c1"># add, read, get, and update</span>
+<span class="n">person</span><span class="p">[</span> <span class="s2">&quot;profession&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Teacher&quot;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span> <span class="p">)</span> <span class="c1"># {&#39;name&#39;: &#39;Joe&#39;, &#39;age&#39;: 24, &#39;profession&#39;: &#39;Teacher&#39;}</span>
+<span class="n">person</span><span class="p">[</span> <span class="s2">&quot;profession&quot;</span> <span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Musician&quot;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span> <span class="p">)</span> <span class="c1"># {&#39;name&#39;: &#39;Joe&#39;, &#39;age&#39;: 24, &#39;profession&#39;: &#39;Musician&#39;}</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="p">[</span> <span class="s2">&quot;age&quot;</span> <span class="p">]</span> <span class="p">)</span> <span class="c1"># 24</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="o">.</span><span class="n">get</span><span class="p">(</span> <span class="s2">&quot;age&quot;</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 24</span>
+<span class="n">person</span><span class="o">.</span><span class="n">update</span><span class="p">(</span> <span class="p">{</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">28</span> <span class="p">}</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span><span class="o">.</span><span class="n">get</span><span class="p">(</span> <span class="s2">&quot;age&quot;</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 28</span>
+
+<span class="c1"># delete</span>
+<span class="k">del</span> <span class="n">person</span><span class="p">[</span> <span class="s2">&quot;age&quot;</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">person</span> <span class="p">)</span> <span class="c1"># {&#39;name&#39;: &#39;Joe&#39;, &#39;profession&#39;: &#39;Musician&#39;}</span>
+</code></pre></div>
+
+
+<h2 id="set-operations">Set Operations</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;grapes&quot;</span><span class="p">}</span>
+
+<span class="c1"># add, update, remove, and discard</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">add</span><span class="p">(</span> <span class="s2">&quot;guava&quot;</span> <span class="p">)</span> <span class="c1"># Adds the item to the set if not exist</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># {&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;guava&#39;, &#39;grapes&#39;}</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">add</span><span class="p">(</span> <span class="s2">&quot;guava&quot;</span> <span class="p">)</span> <span class="c1"># Adds the item to the set if not exist</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># {&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;guava&#39;, &#39;grapes&#39;}</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">update</span><span class="p">(</span> <span class="p">[</span> <span class="s2">&quot;litchi&quot;</span><span class="p">,</span> <span class="s2">&quot;watermelon&quot;</span> <span class="p">]</span> <span class="p">)</span> <span class="c1"># Adds multiple items to the set</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># {&#39;apple&#39;, &#39;banana&#39;, &#39;litchi&#39;, &#39;orange&#39;, &#39;watermelon&#39;, &#39;guava&#39;, &#39;grapes&#39;}</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span> <span class="s2">&quot;litchi&quot;</span> <span class="p">)</span> <span class="c1"># Find and remove the item, throws error if not found</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># {&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;watermelon&#39;, &#39;guava&#39;, &#39;grapes&#39;}</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span> <span class="s2">&quot;litchi&quot;</span> <span class="p">)</span> <span class="c1"># Find and remove the item, does not throw any error</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># {&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;watermelon&#39;, &#39;guava&#39;, &#39;grapes&#39;}</span>
+
+<span class="c1"># pop, copy, and clear</span>
+<span class="n">poppedItem</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># Removes an arbitrary item</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">poppedItem</span> <span class="p">)</span> <span class="c1"># apple</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruits</span> <span class="p">)</span> <span class="c1"># {&#39;banana&#39;, &#39;orange&#39;, &#39;watermelon&#39;, &#39;guava&#39;, &#39;grapes&#39;}</span>
+<span class="n">fruitsCopy</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1"># Shallow copy</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruitsCopy</span> <span class="p">)</span> <span class="c1"># {&#39;banana&#39;, &#39;guava&#39;, &#39;grapes&#39;, &#39;orange&#39;, &#39;watermelon&#39;}</span>
+<span class="n">fruitsCopy</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">fruitsCopy</span> <span class="p">)</span> <span class="c1"># set()</span>
+</code></pre></div>
+
+
+<h2 id="lambda">Lambda</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Lambda: Anonymous function</span>
+<span class="c1"># Arguments: Accepts n arguments</span>
+<span class="c1"># Expressions: Only one expression is allowed</span>
+<span class="c1"># Syntax: lambda arguments : expression</span>
+
+<span class="n">addTo100</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span> <span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">addTo100</span><span class="p">(</span> <span class="mi">50</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 150</span>
+
+<span class="n">multiplyBy2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span> <span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">multiplyBy2</span><span class="p">(</span> <span class="mi">25</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 50</span>
+</code></pre></div>
+
+
+<h2 id="classes-objects">Classes &amp; Objects</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Python is an object oriented programming language</span>
+<span class="c1"># Almost everything in Python is an object</span>
+<span class="c1"># Almost everything has attributes and methods</span>
+<span class="c1"># All functions have a built-in attribute __doc__</span>
+<span class="c1"># Some objects have neither attributes nor methods</span>
+<span class="c1"># Some objects are final</span>
+
+<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">profession</span><span class="p">)</span> <span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">profession</span> <span class="o">=</span> <span class="n">profession</span>
+
+    <span class="k">def</span> <span class="nf">printInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Person Name: </span><span class="si">{}</span><span class="s2"> Age: </span><span class="si">{}</span><span class="s2"> Profession: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">profession</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="n">joe</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="s2">&quot;Software Engineer&quot;</span><span class="p">)</span>
+
+<span class="n">joe</span><span class="o">.</span><span class="n">printInfo</span><span class="p">()</span> <span class="c1"># Person Name: Joe Age: 35 Profession: Software Engineer</span>
+</code></pre></div>
+
+
+<h2 id="modules-packages">Modules &amp; Packages</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Module: A file having Python code including statements and definitions is called as Module.</span>
+<span class="c1"># A module can define variables, functions, and classes.</span>
+<span class="c1"># A module can also include code which can be executed.</span>
+<span class="c1"># The file name must be module name appended by .py extension.</span>
+<span class="c1"># Module name can be accessed within it using the global __name__.</span>
+
+<span class="c1"># Package: A Python package is a collection of Python modules.</span>
+<span class="c1"># Package is a directory having modules.</span>
+<span class="c1"># Regular packages must have an additional __init__.py file, to distinguish it from a directory.</span>
+<span class="c1"># Namespace packages since Python 3.3 do not need __init__.py file</span>
+
+<span class="c1">## Module - models.py</span>
+<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">profession</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">profession</span> <span class="o">=</span> <span class="n">profession</span>
+
+    <span class="k">def</span> <span class="nf">printInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Person Name: </span><span class="si">{}</span><span class="s2"> Age: </span><span class="si">{}</span><span class="s2"> Profession: </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">profession</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="c1">## Module - main.py</span>
+<span class="c1"># Search for models.py in current directory, main.py directory</span>
+<span class="c1"># Search for models.py in the list of directories in the PYTHONPATH environment variable</span>
+<span class="kn">import</span> <span class="nn">models</span> <span class="c1"># Use import mylib.models if models module is available in mylib directory</span>
+
+<span class="n">joe</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="s2">&quot;Software Engineer&quot;</span><span class="p">)</span>
+
+<span class="n">joe</span><span class="o">.</span><span class="n">printInfo</span><span class="p">()</span> <span class="c1"># Person Name: Joe Age: 35 Profession: Software Engineer</span>
+
+<span class="c1">## Module - main.py</span>
+<span class="kn">from</span> <span class="nn">models</span> <span class="kn">import</span> <span class="n">Person</span>
+
+<span class="n">joe</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="s2">&quot;Software Engineer&quot;</span><span class="p">)</span>
+
+<span class="n">joe</span><span class="o">.</span><span class="n">printInfo</span><span class="p">()</span> <span class="c1"># Person Name: Joe Age: 35 Profession: Software Engineer</span>
+
+<span class="c1">## Execute main module on console</span>
+<span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c1">## List directories where Python searches for the Module</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+
+<span class="c1">## Sample Directory Structure</span>
+<span class="err">├──</span> <span class="n">nspkg1</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">regpkg1</span>
+<span class="err">│</span>       <span class="err">├──</span> <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>       <span class="err">└──</span> <span class="n">vehicle</span><span class="o">.</span><span class="n">py</span>
+<span class="err">├──</span> <span class="n">nspkg2</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">nspkg2sub1</span>
+<span class="err">│</span>       <span class="err">└──</span> <span class="n">person</span><span class="o">.</span><span class="n">py</span>
+<span class="err">├──</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c1">## Imports in main.py</span>
+<span class="kn">import</span> <span class="nn">nspkg1.regpkg1.vehicle</span>
+<span class="kn">import</span> <span class="nn">nspkg2.nspkg2sub1.person</span>
+</code></pre></div>
+
+
+<h2 id="errors-exceptions">Errors &amp; Exceptions</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Errors</span>
+<span class="c1"># Program stops working on error</span>
+<span class="c1"># Python raises exceptions when it encounter error</span>
+<span class="c1"># Syntax or parsing errors are the most common for beginners</span>
+
+<span class="c1"># Exceptions</span>
+<span class="c1"># No syntax errors found, program starts execution</span>
+<span class="c1"># Errors detected during execution are called exceptions</span>
+<span class="c1"># Use try: except: finally: to catch and handle the exceptions</span>
+<span class="c1"># Use try: except: finally: to avoid program termination on exceptions</span>
+<span class="c1"># Use try: except: else: instead of try: except: finally: for alternate flows</span>
+<span class="c1"># Multiple except can be use to catch the exceptions</span>
+
+<span class="c1">## Program</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1">## Throws division by zero exception and terminate the program</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> 
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">)</span>
+<span class="ne">ZeroDivisionError</span><span class="p">:</span> <span class="n">division</span> <span class="n">by</span> <span class="n">zero</span>
+
+<span class="c1">## Updated Program - Valid - Try: Except: Finally</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">b</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;a = </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="n">a</span> <span class="p">)</span> <span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Caught divide by zero - while getting a&quot;</span> <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Execute on error - b must be non-zero value&quot;</span> <span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Execute Always - normal and exceptional flow&quot;</span> <span class="p">)</span>
+
+<span class="c1">## Output</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">Execute</span> <span class="n">Always</span> <span class="o">-</span> <span class="n">normal</span> <span class="ow">and</span> <span class="n">exceptional</span> <span class="n">flow</span>
+
+<span class="c1">## Updated Program - Error - Try: Except: Finally</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">b</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;a = </span><span class="si">{}</span><span class="s2">&quot;</span> <span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="n">a</span> <span class="p">)</span> <span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Caught divide by zero - while getting a&quot;</span> <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Execute on error - b must be non-zero value&quot;</span> <span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Alternate to exceptional flow&quot;</span> <span class="p">)</span>
+
+<span class="c1">## Output</span>
+<span class="n">Caught</span> <span class="n">divide</span> <span class="n">by</span> <span class="n">zero</span> <span class="o">-</span> <span class="k">while</span> <span class="n">getting</span> <span class="n">a</span>
+<span class="n">Execute</span> <span class="n">on</span> <span class="n">error</span> <span class="o">-</span> <span class="n">b</span> <span class="n">must</span> <span class="n">be</span> <span class="n">non</span><span class="o">-</span><span class="n">zero</span> <span class="n">value</span>
+<span class="n">Execute</span> <span class="n">Always</span> <span class="o">-</span> <span class="n">normal</span> <span class="ow">and</span> <span class="n">exceptional</span> <span class="n">flow</span>
+</code></pre></div>
+
+
+<h2 id="math">Math</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># math.ceil( num ) - Smallest integer greater than or equal to num</span>
+<span class="c1"># math.floor( num ) - Largest integer less than or equal to num</span>
+<span class="c1"># math.fabs( num ) - Absolute of num</span>
+<span class="c1"># math.factorial( num ) - Integer value of num factorial</span>
+<span class="c1"># math.pow( num, power ) - num raised to the power</span>
+<span class="c1"># math.sqrt( num ) - Square root of num</span>
+<span class="c1"># math.isqrt( num ) - Integer square root of the nonnegative integer num</span>
+<span class="c1"># math.asin( num ) - Arc sine of num radians</span>
+<span class="c1"># math.acos( num ) - Arc cosine of num radians</span>
+<span class="c1"># math.atan( num ) - Arc tangent of num radians</span>
+<span class="c1"># math.sin( num ) - Sine of num radians</span>
+<span class="c1"># math.cos( num ) - Cosine of num radians</span>
+<span class="c1"># math.tan( num ) - Tangent of num radians</span>
+<span class="c1"># math.dist( num1, num2 ) - Euclidean distance between two points num1 and num2</span>
+<span class="c1"># math.degrees( num ) - Angle num from radians to degrees</span>
+<span class="c1"># math.radians( num ) - Degree num from degrees to radians</span>
+<span class="c1"># math.exp(x) - e raised to the power x, e = 2.718281</span>
+<span class="c1"># math.expm1(x) - e raised to the power x minus 1, e = 2.718281</span>
+<span class="c1"># math.log( num[, base] ) - One argument -&gt; natural logarithm of x (to base e), Two arguments -&gt; logarithm of x to the given base</span>
+<span class="c1"># math.log2( num ) - base-2 logarithm of num</span>
+
+<span class="c1">## Examples</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">num</span> <span class="o">=</span> <span class="mf">12.25</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span> <span class="n">num</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 13</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span> <span class="n">num</span> <span class="p">)</span> <span class="p">)</span> <span class="c1"># 12</span>
+</code></pre></div>
+
+
+<h2 id="files">Files</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Function: open</span>
+<span class="c1"># Arguments: 1st -&gt; File path with name, 2nd -&gt; Mode, 3rd -&gt; Encoding</span>
+<span class="c1"># Modes: r -&gt; read only, w -&gt; write only, a -&gt; append only, r+ -&gt; read/write</span>
+<span class="c1"># Optionally append t or b to the mode to specify among text or binary</span>
+
+<span class="c1">## Example - Open</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;test.txt&quot;</span> <span class="p">)</span> <span class="c1"># same as open( &quot;test.txt&quot;, &quot;rt&quot; )</span>
+
+<span class="c1">## Example - Write</span>
+<span class="c1"># Open the file test.txt in write mode</span>
+<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span> <span class="p">)</span>
+
+<span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="s2">&quot;Hello Python !!</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">)</span>
+<span class="n">file</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span> <span class="p">[</span> <span class="s2">&quot;Line 1</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Line 2</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Line 3</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">]</span> <span class="p">)</span>
+<span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1">## Example - Read all lines</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span> <span class="p">)</span>
+
+    <span class="n">text</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">(</span> <span class="mi">15</span> <span class="p">)</span> <span class="c1"># Read first 15 characters</span>
+
+    <span class="nb">print</span><span class="p">(</span> <span class="n">text</span> <span class="p">)</span>
+
+    <span class="n">file</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span> <span class="mi">0</span> <span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span> <span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Failed to open the file&quot;</span> <span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1">## Output</span>
+<span class="n">Hello</span> <span class="n">Python</span> <span class="err">!!</span>
+<span class="n">Hello</span> <span class="n">Python</span> <span class="err">!!</span>
+<span class="n">Line</span> <span class="mi">1</span>
+<span class="n">Line</span> <span class="mi">2</span>
+<span class="n">Line</span> <span class="mi">3</span>
+</code></pre></div>
+
+
+<p><a href="https://cheatsheets.tutorials24x7.com/programming/python">Original Source</a></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2019 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+--><!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright"><a href=""></a>
+      </div>
+
+      <!-- Social links -->
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/DirWalk" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://www.reddit.com/user/DirWalk" target="_blank" rel="noopener" title="reddit" class="md-footer-social__link fa fa-reddit"></a>
+    
+      <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
+    
+      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
+    
+  </div>
+</div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>
