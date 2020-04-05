@@ -1,3 +1,3 @@
 # Linux Networking
 
-![](../../../img/linux_networking_cheatsheet.jpg)
+![](../../../images/linux_networking_cheatsheet.jpg)

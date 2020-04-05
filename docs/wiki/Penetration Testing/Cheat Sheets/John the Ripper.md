@@ -1,3 +1,3 @@
 # John the Ripper
 
-![](../../../img/johntheripper_cheatsheet.png)
+![](../../../images/johntheripper_cheatsheet.png)

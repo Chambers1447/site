@@ -1,3 +1,3 @@
 # Common Ports to Remember
 
-![](../../../img/common_ports_cheatsheet.jpg)
+![](../../../images/common_ports_cheatsheet.jpg)
