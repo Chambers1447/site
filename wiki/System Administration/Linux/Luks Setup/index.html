@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2696,12 +2696,12 @@
                 
                   <h1>Luks Setup</h1>
                 
-                <h3 id="find-disk">Find disk</h3>
+                <h3 id="find-disk">Find disk<a class="headerlink" href="#find-disk" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>lsblk
 </code></pre></div>
 
 
-<h3 id="partition-setup">Partition Setup:</h3>
+<h3 id="partition-setup">Partition Setup:<a class="headerlink" href="#partition-setup" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>sudo parted /dev/sd[x]
 mklabel gpt
 print
@@ -2712,7 +2712,7 @@ quit
 </code></pre></div>
 
 
-<h5 id="or"><strong><em>OR</em></strong></h5>
+<h5 id="or"><strong><em>OR</em></strong><a class="headerlink" href="#or" title="Permanent link">&para;</a></h5>
 <div class="codehilite"><pre><span></span><code>parted -a optimal /dev/sd[x] mkpart primary 0% 100%
 </code></pre></div>
 
@@ -2720,13 +2720,13 @@ quit
 <blockquote>
 <p>You may need to delete any current partitions</p>
 </blockquote>
-<h3 id="make-the-filesystem-and-check">Make the filesystem and check</h3>
+<h3 id="make-the-filesystem-and-check">Make the filesystem and check<a class="headerlink" href="#make-the-filesystem-and-check" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>mkfs.ext4 /dev/sd[X]1
 sudo fdisk -l
 </code></pre></div>
 
 
-<h3 id="encrypted-disk-setup">Encrypted Disk Setup:</h3>
+<h3 id="encrypted-disk-setup">Encrypted Disk Setup:<a class="headerlink" href="#encrypted-disk-setup" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>sudo fdisk -l
 sudo cryptsetup -v -y luksFormat /dev/sd[X]1
 sudo cryptsetup luksOpen /dev/sd[X]1 [dev mapper name]
@@ -2737,35 +2737,35 @@ sudo chown -R $USER:$USER [mount point]
 </code></pre></div>
 
 
-<h3 id="auto-mount-disk">Auto Mount Disk:</h3>
+<h3 id="auto-mount-disk">Auto Mount Disk:<a class="headerlink" href="#auto-mount-disk" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>sudo vim /etc/fstab
 </code></pre></div>
 
 
-<h3 id="add-this-line">Add this line</h3>
+<h3 id="add-this-line">Add this line<a class="headerlink" href="#add-this-line" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>/dev/mapper/[dev mapper name] [mount point] ext4 defaults 0 2
 </code></pre></div>
 
 
-<h3 id="key-unlock">Key Unlock:</h3>
-<h4 id="create-the-keyfile">Create the keyfile</h4>
+<h3 id="key-unlock">Key Unlock:<a class="headerlink" href="#key-unlock" title="Permanent link">&para;</a></h3>
+<h4 id="create-the-keyfile">Create the keyfile<a class="headerlink" href="#create-the-keyfile" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>mkdir [hidden keyfile directory]
 dd if=/dev/random bs=32 count=4 of=[hidden keyfile directory]/keyfile
 sudo cryptsetup luksAddKey /dev/sd[X]1 [hidden keyfile directory]/keyfile
 </code></pre></div>
 
 
-<h4 id="get-the-disk-uuid">Get the disk UUID</h4>
+<h4 id="get-the-disk-uuid">Get the disk UUID<a class="headerlink" href="#get-the-disk-uuid" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>ls -l /dev/disk/by-uuid/
 </code></pre></div>
 
 
-<h4 id="edit-the-crypttab">Edit the crypttab</h4>
+<h4 id="edit-the-crypttab">Edit the crypttab<a class="headerlink" href="#edit-the-crypttab" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>sudo vim /etc/crypttab
 </code></pre></div>
 
 
-<h4 id="add-this-line_1">Add this line</h4>
+<h4 id="add-this-line_1">Add this line<a class="headerlink" href="#add-this-line_1" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>[dev mapper name] UUID=[uuid of cryptdevice] [hidden keyfile directory]/keyfile luks
 </code></pre></div>
                 
@@ -2822,8 +2822,6 @@ sudo cryptsetup luksAddKey /dev/sd[X]1 [hidden keyfile directory]/keyfile
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

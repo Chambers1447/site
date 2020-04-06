@@ -1237,8 +1237,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../wiki/" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../../wiki/" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2562,13 +2562,13 @@
                   <a href="https://github.com/DirWalk/site/edit/master/docs/Write-Ups/OverTheWire/Bandit/Level 14.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="level-14">Level 14</h1>
-<h2 id="objectives">Objectives</h2>
+                <h1 id="level-14">Level 14<a class="headerlink" href="#level-14" title="Permanent link">&para;</a></h1>
+<h2 id="objectives">Objectives<a class="headerlink" href="#objectives" title="Permanent link">&para;</a></h2>
 <ol>
 <li>SSH to user <code>bandit13</code></li>
 <li>Get SSH private key in <code>/etc/bandit_pass/bandit14</code>, which is readable by only bandit14. </li>
 </ol>
-<h3 id="objective-1">Objective 1</h3>
+<h3 id="objective-1">Objective 1<a class="headerlink" href="#objective-1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Username: <code>bandit13</code></li>
 <li>Password: <code>8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL</code></li>
@@ -2582,7 +2582,7 @@
 <blockquote>
 <p>Success!</p>
 </blockquote>
-<h3 id="objective-2">Objective 2</h3>
+<h3 id="objective-2">Objective 2<a class="headerlink" href="#objective-2" title="Permanent link">&para;</a></h3>
 <p>The SSH private key shouldn't be readable by us, but we'll be able to use it as the password for <code>bandit14</code>.</p>
 <p>If you do an <code>ls</code>, you'll see that there is <code>sshkey.private</code> in the home directory.</p>
 <div class="codehilite"><pre><span></span><code>bandit13@bandit:~$ cat sshkey.private 
@@ -2673,8 +2673,6 @@ kAWpXbv5tbkkzbS0eaLPTKgLzavXtQoTtKwrjpolHKIHUz6Wu+n4abfAIRFubOdN
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

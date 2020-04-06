@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2600,34 +2600,34 @@
                 
                   <h1>Wireshark</h1>
                 
-                <h3 id="show-only-smtp-port-25-and-icmp-traffic">Show only SMTP (port 25) and ICMP traffic:</h3>
+                <h3 id="show-only-smtp-port-25-and-icmp-traffic">Show only SMTP (port 25) and ICMP traffic:<a class="headerlink" href="#show-only-smtp-port-25-and-icmp-traffic" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>tcp.port eq <span class="m">25</span> or icmp
 </code></pre></div>
 
 
-<h3 id="show-only-traffic-in-the-lan-192168xx-between-workstations-and-servers-no-internet">Show only traffic in the LAN (192.168.x.x), between workstations and servers -- no Internet:</h3>
+<h3 id="show-only-traffic-in-the-lan-192168xx-between-workstations-and-servers-no-internet">Show only traffic in the LAN (192.168.x.x), between workstations and servers -- no Internet:<a class="headerlink" href="#show-only-traffic-in-the-lan-192168xx-between-workstations-and-servers-no-internet" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>ip.src<span class="o">==</span><span class="m">192</span>.168.0.0/16 and ip.dst<span class="o">==</span><span class="m">192</span>.168.0.0/16
 </code></pre></div>
 
 
-<h3 id="filter-by-a-protocol-eg-sip-and-filter-out-unwanted-ips">Filter by a protocol ( e.g. SIP ) and filter out unwanted IPs:</h3>
+<h3 id="filter-by-a-protocol-eg-sip-and-filter-out-unwanted-ips">Filter by a protocol ( e.g. SIP ) and filter out unwanted IPs:<a class="headerlink" href="#filter-by-a-protocol-eg-sip-and-filter-out-unwanted-ips" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>ip.src !<span class="o">=</span> xxx.xxx.xxx.xxx <span class="o">&amp;&amp;</span> ip.dst !<span class="o">=</span> xxx.xxx.xxx.xxx <span class="o">&amp;&amp;</span> sip
 </code></pre></div>
 
 
-<h4 id="some-commands-are-equal">Some commands are equal</h4>
+<h4 id="some-commands-are-equal">Some commands are equal<a class="headerlink" href="#some-commands-are-equal" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>ip.addr <span class="o">==</span> xxx.xxx.xxx.xxx
 </code></pre></div>
 
 
-<h4 id="equals">Equals</h4>
+<h4 id="equals">Equals<a class="headerlink" href="#equals" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>ip.src <span class="o">==</span> xxx.xxx.xxx.xxx or ip.dst <span class="o">==</span> xxx.xxx.xxx.xxx
 
 ip.addr !<span class="o">=</span> xxx.xxx.xxx.xxx
 </code></pre></div>
 
 
-<h4 id="equals_1">Equals</h4>
+<h4 id="equals_1">Equals<a class="headerlink" href="#equals_1" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>ip.src !<span class="o">=</span> xxx.xxx.xxx.xxx or ip.dst !<span class="o">=</span> xxx.xxx.xxx.xxx
 </code></pre></div>
                 
@@ -2684,8 +2684,6 @@ ip.addr !<span class="o">=</span> xxx.xxx.xxx.xxx
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

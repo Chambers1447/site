@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2560,22 +2560,22 @@
                 
                   <h1>TCPDump</h1>
                 
-                <h3 id="display-a-pcap-file">Display a pcap file</h3>
+                <h3 id="display-a-pcap-file">Display a pcap file<a class="headerlink" href="#display-a-pcap-file" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>tcpdump -r passwordz.pcap
 </code></pre></div>
 
 
-<h3 id="display-ips-and-filter-and-sort">Display ips and filter and sort</h3>
+<h3 id="display-ips-and-filter-and-sort">Display ips and filter and sort<a class="headerlink" href="#display-ips-and-filter-and-sort" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>tcpdump -n -r passwordz.pcap <span class="p">|</span> awk -F<span class="s2">&quot; &quot;</span> <span class="s1">&#39;{print $3}&#39;</span> <span class="p">|</span> sort -u <span class="p">|</span> head
 </code></pre></div>
 
 
-<h3 id="grab-a-packet-capture-on-port-80">Grab a packet capture on port 80</h3>
+<h3 id="grab-a-packet-capture-on-port-80">Grab a packet capture on port 80<a class="headerlink" href="#grab-a-packet-capture-on-port-80" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>tcpdump tcp port <span class="m">80</span> -w output.pcap -i eth0
 </code></pre></div>
 
 
-<h3 id="check-for-ack-or-psh-flag-set-in-a-tcp-packet">Check for ACK or PSH flag set in a TCP packet</h3>
+<h3 id="check-for-ack-or-psh-flag-set-in-a-tcp-packet">Check for ACK or PSH flag set in a TCP packet<a class="headerlink" href="#check-for-ack-or-psh-flag-set-in-a-tcp-packet" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>tcpdump -A -n <span class="s1">&#39;tcp[13] = 24&#39;</span> -r passwordz.pcap
 </code></pre></div>
                 
@@ -2632,8 +2632,6 @@
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2662,8 +2662,8 @@
                   <a href="https://github.com/DirWalk/site/edit/master/docs/wiki/System Administration/Applications and Services/Code.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="installing-code-server-on-an-lxc-ubuntu-1804-container">Installing <a href="https://github.com/cdr/code-server">Code-Server</a> on an LXC Ubuntu 18.04 container</h1>
-<h2 id="introduction">Introduction</h2>
+                <h1 id="installing-code-server-on-an-lxc-ubuntu-1804-container">Installing <a href="https://github.com/cdr/code-server">Code-Server</a> on an LXC Ubuntu 18.04 container<a class="headerlink" href="#installing-code-server-on-an-lxc-ubuntu-1804-container" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/cdr/code-server">Code-Server</a> is VS Code running on a remote server, accessible through the browser.</p>
 <ul>
 <li>
@@ -2673,23 +2673,23 @@
 <p>Server-powered: Take advantage of large cloud servers to speed up tests, compilations, downloads, and more. Preserve battery life when you're on the go since all intensive computation runs on your server.</p>
 </li>
 </ul>
-<h2 id="update-and-upgrade-the-container">Update and upgrade the container</h2>
+<h2 id="update-and-upgrade-the-container">Update and upgrade the container<a class="headerlink" href="#update-and-upgrade-the-container" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>apt update &amp;&amp; apt upgrade -y
 </code></pre></div>
 
 
-<h2 id="pull-down-the-latest-release-of-the-code-server-binary">Pull down the latest release of the Code-Server binary</h2>
+<h2 id="pull-down-the-latest-release-of-the-code-server-binary">Pull down the latest release of the Code-Server binary<a class="headerlink" href="#pull-down-the-latest-release-of-the-code-server-binary" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>cd /tmp
 wget https://github.com/cdr/code-server/releases/download/2.1698/code-server2.1698-vsc1.41.1-linux-x86_64.tar.gz
 </code></pre></div>
 
 
-<h2 id="decompress-it">Decompress it</h2>
+<h2 id="decompress-it">Decompress it<a class="headerlink" href="#decompress-it" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>tar tvzf code-server2.1698-vsc1.41.1-linux-x86_64.tar.gz
 </code></pre></div>
 
 
-<h2 id="move-the-binary-to-usrbin">Move the binary to <code>/usr/bin/</code></h2>
+<h2 id="move-the-binary-to-usrbin">Move the binary to <code>/usr/bin/</code><a class="headerlink" href="#move-the-binary-to-usrbin" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>mv code-server2.1698-vsc1.41.1-linux-x86_64/code-server /usr/bin/
 </code></pre></div>
 
@@ -2697,7 +2697,7 @@ wget https://github.com/cdr/code-server/releases/download/2.1698/code-server2.16
 <blockquote>
 <p>This is done to save some time later dealing with paths.  You can use other directories like <code>/opt</code>, but to save time in a container <code>/usr/bin/</code> will do.</p>
 </blockquote>
-<h2 id="test-to-see-if-it-works">Test to see if it works</h2>
+<h2 id="test-to-see-if-it-works">Test to see if it works<a class="headerlink" href="#test-to-see-if-it-works" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>code-server --host 0.0.0.0 --port 8080
 </code></pre></div>
 
@@ -2706,13 +2706,13 @@ wget https://github.com/cdr/code-server/releases/download/2.1698/code-server2.16
 <p>It will prompt you with a temporary password for now, we will change this later.</p>
 </blockquote>
 <p>You may just be done now, if that's all you want to do.  You'll have a fully functional version of VSCode over the web.  If you would like to add a systemd unit file to start on reboot automatically, that's what we're going to be doing next!</p>
-<h2 id="creating-a-user">Creating a user</h2>
+<h2 id="creating-a-user">Creating a user<a class="headerlink" href="#creating-a-user" title="Permanent link">&para;</a></h2>
 <p>We should create a user to run this, just so it isn't running as root.  Since VSCode allows you to view system files with it's built in File Explorer, let's try to limit risk by running Code-Server as a less privileged user.</p>
 <div class="codehilite"><pre><span></span><code>useradd -Ums /usr/sbin/nologin code
 </code></pre></div>
 
 
-<h2 id="creating-a-startup-script">Creating a startup script</h2>
+<h2 id="creating-a-startup-script">Creating a startup script<a class="headerlink" href="#creating-a-startup-script" title="Permanent link">&para;</a></h2>
 <p>In order to set a password, you need to set the <code>PASSWORD</code> environment variable.  An easy, consistent way of handling this is to utilize a bash script.</p>
 <p>For example:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -2744,7 +2744,7 @@ code-server --host <span class="m">0</span>.0.0.0 --port <span class="m">8080</s
 
 <p>I add in the <code>--disable-telemetry</code> to simply disable telemetry for the server.  I also explicitly state the <code>--extensions-dir</code> and <code>--user-data-dir</code>.  This may not be necessary, but I do so to make sure everything starts appropriately.</p>
 <p>I run this script out of the <code>/opt</code> folder in to keep things clean and since the systemd unit file will call this file explicitly, I'm not worried about paths.</p>
-<h2 id="systemd-unit-file">SystemD Unit File</h2>
+<h2 id="systemd-unit-file">SystemD Unit File<a class="headerlink" href="#systemd-unit-file" title="Permanent link">&para;</a></h2>
 <p>Now we need to create a systemd unit file so the server will start when the container starts. My systemd unit file looks like this:</p>
 <div class="codehilite"><pre><span></span><code>[Unit]
 Description=Code Service
@@ -2767,13 +2767,13 @@ WantedBy=multi-user.target
 
 
 <p>Notice the <code>User=</code> and <code>Group=</code> I have set to the user <code>code</code> that I made earlier. I also set the <code>ExecStart=</code> to the bash script I created. </p>
-<h2 id="enabling-and-starting-the-service">Enabling and starting the service</h2>
+<h2 id="enabling-and-starting-the-service">Enabling and starting the service<a class="headerlink" href="#enabling-and-starting-the-service" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>systemctl enable code.service
 systemctl start code.service
 </code></pre></div>
 
 
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
 <p>Everything should now be up and running. My instance is going to be behind a proxy, so that handles the SSL certificates for me, but you could also add SSL certs to this by adding your cert and key with the respective <code>--cert</code> and <code>--cert-key</code> flags.</p>
 <p>You should now be able to have a consistent dev environment just by using your browser!</p>
 <p>For more documentation, head over to the <a href="https://github.com/cdr/code-server">Code-Server Github page.</a></p>
@@ -2831,8 +2831,6 @@ systemctl start code.service
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

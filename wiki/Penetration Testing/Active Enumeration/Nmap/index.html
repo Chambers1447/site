@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2796,102 +2796,102 @@
                 
                   <h1>Nmap</h1>
                 
-                <h2 id="establish-the-variable">Establish the variable</h2>
+                <h2 id="establish-the-variable">Establish the variable<a class="headerlink" href="#establish-the-variable" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code><span class="nb">export</span> <span class="nv">ip</span><span class="o">=</span><span class="m">192</span>.168.1.100
 </code></pre></div>
 
 
-<h3 id="typical-nmap-scan">Typical Nmap scan</h3>
+<h3 id="typical-nmap-scan">Typical Nmap scan<a class="headerlink" href="#typical-nmap-scan" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -sV -sC -O -oA scan <span class="nv">$ip</span>
 </code></pre></div>
 
 
-<h3 id="nmap-stealth-scan-using-syn">Nmap stealth scan using SYN</h3>
+<h3 id="nmap-stealth-scan-using-syn">Nmap stealth scan using SYN<a class="headerlink" href="#nmap-stealth-scan-using-syn" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -sS <span class="nv">$ip</span>
 </code></pre></div>
 
 
-<h3 id="nmap-stealth-scan-using-fin">Nmap stealth scan using FIN</h3>
+<h3 id="nmap-stealth-scan-using-fin">Nmap stealth scan using FIN<a class="headerlink" href="#nmap-stealth-scan-using-fin" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -sF <span class="nv">$ip</span>
 </code></pre></div>
 
 
-<h3 id="nmap-banner-grabbing">Nmap Banner Grabbing</h3>
+<h3 id="nmap-banner-grabbing">Nmap Banner Grabbing<a class="headerlink" href="#nmap-banner-grabbing" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -sV -sT <span class="nv">$ip</span>
 </code></pre></div>
 
 
-<h3 id="nmap-os-fingerprinting">Nmap OS Fingerprinting</h3>
+<h3 id="nmap-os-fingerprinting">Nmap OS Fingerprinting<a class="headerlink" href="#nmap-os-fingerprinting" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -O <span class="nv">$ip</span>
 </code></pre></div>
 
 
-<h3 id="nmap-regular-scan">Nmap Regular Scan:</h3>
+<h3 id="nmap-regular-scan">Nmap Regular Scan:<a class="headerlink" href="#nmap-regular-scan" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap <span class="nv">$ip</span>/24
 </code></pre></div>
 
 
-<h3 id="enumeration-scan-all-ports-tcp-udp-and-output-to-a-txt-file">Enumeration Scan All Ports TCP / UDP and output to a txt file</h3>
+<h3 id="enumeration-scan-all-ports-tcp-udp-and-output-to-a-txt-file">Enumeration Scan All Ports TCP / UDP and output to a txt file<a class="headerlink" href="#enumeration-scan-all-ports-tcp-udp-and-output-to-a-txt-file" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -oN scan.txt -v -sU -sS -p- -A -T4 <span class="nv">$ip</span>
 </code></pre></div>
 
 
-<h3 id="nmap-output-to-a-file">Nmap output to a file:</h3>
+<h3 id="nmap-output-to-a-file">Nmap output to a file:<a class="headerlink" href="#nmap-output-to-a-file" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -oN scan.txt -p <span class="m">1</span>-65535 -sV -sS -A -T4 <span class="nv">$ip</span>/24
 </code></pre></div>
 
 
-<h3 id="quick-scan">Quick Scan:</h3>
+<h3 id="quick-scan">Quick Scan:<a class="headerlink" href="#quick-scan" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -T4 -F <span class="nv">$ip</span>/24
 </code></pre></div>
 
 
-<h3 id="quick-scan-plus">Quick Scan Plus:</h3>
+<h3 id="quick-scan-plus">Quick Scan Plus:<a class="headerlink" href="#quick-scan-plus" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -sV -T4 -O -F --version-light <span class="nv">$ip</span>/24
 </code></pre></div>
 
 
-<h3 id="quick-traceroute">Quick traceroute</h3>
+<h3 id="quick-traceroute">Quick traceroute<a class="headerlink" href="#quick-traceroute" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -sn --traceroute <span class="nv">$ip</span>
 </code></pre></div>
 
 
-<h3 id="all-tcp-and-udp-ports">All TCP and UDP Ports</h3>
+<h3 id="all-tcp-and-udp-ports">All TCP and UDP Ports<a class="headerlink" href="#all-tcp-and-udp-ports" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -v -sU -sS -p- -A -T4 <span class="nv">$ip</span>
 </code></pre></div>
 
 
-<h3 id="intense-scan">Intense Scan:</h3>
+<h3 id="intense-scan">Intense Scan:<a class="headerlink" href="#intense-scan" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -T4 -A -v <span class="nv">$ip</span>
 </code></pre></div>
 
 
-<h3 id="intense-scan-plus-udp">Intense Scan Plus UDP</h3>
+<h3 id="intense-scan-plus-udp">Intense Scan Plus UDP<a class="headerlink" href="#intense-scan-plus-udp" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -sS -sU -T4 -A -v <span class="nv">$ip</span>/24
 </code></pre></div>
 
 
-<h3 id="intense-scan-all-tcp-ports">Intense Scan ALL TCP Ports</h3>
+<h3 id="intense-scan-all-tcp-ports">Intense Scan ALL TCP Ports<a class="headerlink" href="#intense-scan-all-tcp-ports" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -p <span class="m">1</span>-65535 -T4 -A -v <span class="nv">$ip</span>/24
 </code></pre></div>
 
 
-<h3 id="intense-scan-no-ping">Intense Scan - No Ping</h3>
+<h3 id="intense-scan-no-ping">Intense Scan - No Ping<a class="headerlink" href="#intense-scan-no-ping" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -T4 -A -v -Pn <span class="nv">$ip</span>/24
 </code></pre></div>
 
 
-<h3 id="ping-scan">Ping scan</h3>
+<h3 id="ping-scan">Ping scan<a class="headerlink" href="#ping-scan" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -sn <span class="nv">$ip</span>/24
 </code></pre></div>
 
 
-<h3 id="slow-comprehensive-scan">Slow Comprehensive Scan</h3>
+<h3 id="slow-comprehensive-scan">Slow Comprehensive Scan<a class="headerlink" href="#slow-comprehensive-scan" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g <span class="m">53</span> --script <span class="s2">&quot;default or (discovery and safe)&quot;</span> <span class="nv">$ip</span>/24
 </code></pre></div>
 
 
-<h3 id="scan-with-active-connect-in-order-to-weed-out-any-spoofed-ports-designed-to-troll-you">Scan with Active connect in order to weed out any spoofed ports designed to troll you</h3>
+<h3 id="scan-with-active-connect-in-order-to-weed-out-any-spoofed-ports-designed-to-troll-you">Scan with Active connect in order to weed out any spoofed ports designed to troll you<a class="headerlink" href="#scan-with-active-connect-in-order-to-weed-out-any-spoofed-ports-designed-to-troll-you" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>nmap -p1-65535 -A -T5 -sT <span class="nv">$ip</span>
 </code></pre></div>
                 
@@ -2948,8 +2948,6 @@
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

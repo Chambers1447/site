@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2614,7 +2614,7 @@
                 
                   <h1>Passwordstore</h1>
                 
-                <h3 id="setting-up">Setting up:</h3>
+                <h3 id="setting-up">Setting up:<a class="headerlink" href="#setting-up" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>gpg2 --full-gen-key 
 pass init user@email.com
 pass git init
@@ -2624,31 +2624,31 @@ pass git init
 <blockquote>
 <p>Might have to use <code>gpg</code> on certain distributions</p>
 </blockquote>
-<h3 id="set-up-git">Set up Git:</h3>
-<h4 id="on-git-server"><strong><em>On Git server</em></strong></h4>
+<h3 id="set-up-git">Set up Git:<a class="headerlink" href="#set-up-git" title="Permanent link">&para;</a></h3>
+<h4 id="on-git-server"><strong><em>On Git server</em></strong><a class="headerlink" href="#on-git-server" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>apt install git
 adduser git
 </code></pre></div>
 
 
-<h4 id="local-machine"><strong><em>Local Machine</em></strong></h4>
+<h4 id="local-machine"><strong><em>Local Machine</em></strong><a class="headerlink" href="#local-machine" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>ssh-keygen -t ed25519
 ssh-copy-id git@serverIP
 </code></pre></div>
 
 
-<h4 id="on-git-server_1"><strong><em>On Git server</em></strong></h4>
+<h4 id="on-git-server_1"><strong><em>On Git server</em></strong><a class="headerlink" href="#on-git-server_1" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>git init --bare pass-repo
 </code></pre></div>
 
 
-<h4 id="local-machine_1"><strong><em>Local Machine</em></strong></h4>
+<h4 id="local-machine_1"><strong><em>Local Machine</em></strong><a class="headerlink" href="#local-machine_1" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code>pass git remote add origin ssh://git@serverIP:/home/git/pass-repo
 pass git push -u --all
 </code></pre></div>
 
 
-<h3 id="to-set-up-on-another-machine"><strong><em>To set up on another machine:</em></strong></h3>
+<h3 id="to-set-up-on-another-machine"><strong><em>To set up on another machine:</em></strong><a class="headerlink" href="#to-set-up-on-another-machine" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>gpg2 --export-secret-keys &gt; secret.gpg  #might have to use gpg on older kernels
 ssh-keygen -t ed25519
 ssh-copy-id git@serverIP
@@ -2708,8 +2708,6 @@ git clone ssh://git@serverIP:/home/git/pass-repo ~/.password-store
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

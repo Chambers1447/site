@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2600,30 +2600,30 @@
                 
                   <h1>Reverse SSH Tunnel</h1>
                 
-                <h3 id="on-server-2-behind-firewall-or-double-nat">On Server 2 (behind firewall or double NAT):</h3>
+                <h3 id="on-server-2-behind-firewall-or-double-nat">On Server 2 (behind firewall or double NAT):<a class="headerlink" href="#on-server-2-behind-firewall-or-double-nat" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>ssh -f -N -T -R&lt;Port opened on Server 1&gt;:0.0.0.0:22 &lt;Server 1 Username&gt;@&lt;Server 1 IP Address&gt;
 </code></pre></div>
 
 
-<h3 id="on-workstation">On Workstation:</h3>
+<h3 id="on-workstation">On Workstation:<a class="headerlink" href="#on-workstation" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>ssh -f -N -T &lt;Server 1 Username&gt;@&lt;Server 1 IP Address&gt; -M -S &lt;Whatever Control Socket Name&gt; -L &lt;Workstation RHP&gt;:localhost:&lt;Port opened on Server 1&gt;
 
 ssh -p &lt;Workstation RHP&gt; -S &lt;Whatever Control Socket Name&gt; &lt;Server 2 Username&gt;@localhost
 </code></pre></div>
 
 
-<h2 id="jump-server">Jump Server:</h2>
-<h3 id="remote">Remote:</h3>
+<h2 id="jump-server">Jump Server:<a class="headerlink" href="#jump-server" title="Permanent link">&para;</a></h2>
+<h3 id="remote">Remote:<a class="headerlink" href="#remote" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>ssh -f -N -T -R&lt;Port opening on Jump Server&gt;:0.0.0.0:&lt;Jump server SSH port&gt; &lt;jump username&gt;@&lt;Jump IP address (public IP)&gt;
 </code></pre></div>
 
 
-<h3 id="jump">Jump:</h3>
+<h3 id="jump">Jump:<a class="headerlink" href="#jump" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>ssh -f -N -T -g &lt;jump username&gt;@localhost -L &lt;globally listening port to connect into&gt;:localhost:&lt;port opened initially on jump server&gt;
 </code></pre></div>
 
 
-<h3 id="host">Host:</h3>
+<h3 id="host">Host:<a class="headerlink" href="#host" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>ssh -p &lt;global listen on jump&gt; &lt;remote username&gt;@&lt;jump server IP address (private IP)&gt;
 </code></pre></div>
                 
@@ -2680,8 +2680,6 @@ ssh -p &lt;Workstation RHP&gt; -S &lt;Whatever Control Socket Name&gt; &lt;Serve
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>

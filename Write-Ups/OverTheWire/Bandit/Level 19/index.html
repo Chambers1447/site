@@ -1237,8 +1237,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../wiki/" title="Home" class="md-nav__link">
-      Home
+    <a href="../../../../wiki/" title="About" class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -2562,13 +2562,13 @@
                   <a href="https://github.com/DirWalk/site/edit/master/docs/Write-Ups/OverTheWire/Bandit/Level 19.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="level-19">Level 19</h1>
-<h2 id="objectives">Objectives</h2>
+                <h1 id="level-19">Level 19<a class="headerlink" href="#level-19" title="Permanent link">&para;</a></h1>
+<h2 id="objectives">Objectives<a class="headerlink" href="#objectives" title="Permanent link">&para;</a></h2>
 <ol>
 <li>SSH to <code>bandit18</code></li>
 <li>Read the password from file <code>readme</code></li>
 </ol>
-<h3 id="objective-1">Objective 1</h3>
+<h3 id="objective-1">Objective 1<a class="headerlink" href="#objective-1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Username: <code>bandit18</code></li>
 <li>Password: <code>kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd</code></li>
@@ -2582,7 +2582,7 @@
 <blockquote>
 <p>Successfully connected, but disconnected immediately.</p>
 </blockquote>
-<h3 id="objective-2">Objective 2</h3>
+<h3 id="objective-2">Objective 2<a class="headerlink" href="#objective-2" title="Permanent link">&para;</a></h3>
 <p>After we determined that the password was indeed the correct password from the last level, we now need to deal with a <code>.bashrc</code> that disconnects us immediately when we connect with SSH.</p>
 <p>We know that the file is name <code>readme</code> in the home directory, so let's read that file by using SSH to send commands for us.</p>
 <div class="codehilite"><pre><span></span><code>user@localhost:~$ ssh -p 2220 bandit18@bandit.labs.overthewire.org &#39;cat readme&#39;
@@ -2645,8 +2645,6 @@ IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
       <a href="https://twitter.com/DirWalk" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
     
       <a href="mailto:dirwalk@pm.me" target="_blank" rel="noopener" title="envelope-o" class="md-footer-social__link fa fa-envelope-o"></a>
-    
-      <a href="https://wiki.dirwalk.com" target="_blank" rel="noopener" title="book" class="md-footer-social__link fa fa-book"></a>
     
   </div>
 </div>
