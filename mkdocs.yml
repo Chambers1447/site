@@ -35,8 +35,6 @@ extra:
       link: 'https://twitter.com/DirWalk'
     - type: 'envelope-o'
       link: 'mailto:dirwalk@pm.me'
-    - type: 'book'
-      link: 'https://wiki.dirwalk.com'
 
 extra_css:
   - 'stylesheets/extra.css'
@@ -45,8 +43,8 @@ markdown_extensions:
   - admonition
   - codehilite:
       guess_lang: false
-  # - toc:
-  #     permalink: true
+  - toc:
+       permalink: true
 
 plugins:
   - search

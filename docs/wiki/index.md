@@ -1,4 +1,4 @@
-# Home
+# About
 
 In an effort to make maintain my documentation and make it accessible, I've generated this Wiki.
 
