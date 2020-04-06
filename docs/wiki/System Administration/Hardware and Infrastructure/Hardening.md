@@ -38,3 +38,6 @@ STIG
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/security_guide/index#chap-Compliance_and_Vulnerability_Scanning
 https://gitlab.com/apparmor/apparmor/wikis/FAQ
 https://github.com/hardenedlinux/harbian-audit
+
+## Systemd Service Sandboxing and Security Hardening 101
+https://www.ctrl.blog/entry/systemd-service-hardening.html

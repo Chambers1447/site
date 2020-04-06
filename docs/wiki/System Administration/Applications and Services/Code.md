@@ -1,4 +1,6 @@
-# Installing [Code-Server](https://github.com/cdr/code-server) on an LXC Ubuntu 18.04 container
+# Code-Server
+
+Installing [Code-Server](https://github.com/cdr/code-server) on an LXC Ubuntu 18.04 container
 
 ## Introduction
 
