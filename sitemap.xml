@@ -444,6 +444,10 @@
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Resources/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://dirwalk.com/wiki/System%20Administration/Applications%20and%20Services/Code/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
@@ -456,7 +460,107 @@
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/802.11/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/802.1X/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/BGP/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/Cisco%20IOS/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/EIGRP/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/First%20Hop%20Redundancy/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/IPSec/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/IPv4%20Multicast/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/IPv4%20Subnetting/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/IPv6/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/IS-IS/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/Linux%20Networking/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/MPLS/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/Markdown/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/NAT/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/OSPF/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/PPP/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/Physical%20Terminations/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/QoS/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/RIP/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/Scapy/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/Spanning%20Tree/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/TCPDump/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/VLANs/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/VOIP%20Basics/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Cheat%20Sheets/Wireshark%20Display%20Filters/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -537,18 +641,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://dirwalk.com/wiki/System%20Administration/Linux/ZFS/</loc>
-     <lastmod>2020-04-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://dirwalk.com/wiki/System%20Administration/Resources/Awesome%20Selfhosted/</loc>
-     <lastmod>2020-04-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://dirwalk.com/wiki/System%20Administration/Resources/Awesome%20Sysadmin/</loc>
-     <lastmod>2020-04-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://dirwalk.com/wiki/System%20Administration/Resources/Random/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
