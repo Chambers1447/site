@@ -55,3 +55,7 @@ This is a running list of resources during the 2020 pandemic.
 * [The Cyber Mentor](https://www.youtube.com/channel/UC0ArlFuFYMpEewyRBzdLHiw)
 * [IppSec](https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA)
 * [John Hammond](https://www.youtube.com/user/RootOfTheNull)
+
+## Compliation
+* [Curated Self Study Guide for Computer Science and DevOps/SRE/SysAdmin](http://Learn.SharjeelSayed.com)
+* [Training Resources](https://www.reddit.com/r/cybersecurity/comments/fcz6iz/training_resources_for_those_too_lazy_to_google/)

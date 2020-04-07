@@ -1,8 +1,7 @@
 # Bash Linting
 
 ## `shellcheck`
-
-```
+```sh
 apt install shellcheck
 
 dnf install ShellCheck
@@ -13,7 +12,6 @@ brew install shellcheck
 ```
 
 ## Usage:
-
-```
+```sh
 shellcheck <file>
 ```

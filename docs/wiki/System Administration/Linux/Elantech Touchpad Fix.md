@@ -1,28 +1,26 @@
-### Temporary fix:
+# Elantech Touchpad Fix
 
+## Temporary fix:
+```sh
+sudo sh -c 'echo -n "elantech"> /sys/bus/serio/devices/serio1/protocol'
 ```
-temp text
-```
 
----
+## Permanent fix:
 
-### Grub fix
-
-#### Edit `/etc/default/grub`
-
-```
+### Edit `/etc/default/grub`
+```sh
 vim /etc/default/grub
 ```
 
-#### Edit TEMPMODULELINE with `psmouse.elantech_smbus=0`
+### Edit GRUB_CMDLINE_LINUX_DEFAULT with `psmouse.elantech_smbus=0`
+```sh
+GRUB_CMDLINE_LINUX_DEFAULT=quiet psmouse.elantech_smbus=0
+```
+> You may have some other arguments in there, like `splash`.
 
-```
-TEMPMODULELINE=quiet psmouse.elantech_smbus=0
-```
-#### Update grub to take effect
-
-```
+### Update grub to take effect
+```sh
 update-grub
 ```
 
-#### Reboot
+### Reboot
