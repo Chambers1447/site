@@ -432,15 +432,15 @@
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://dirwalk.com/wiki/Programming/Powershell/Resources/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://dirwalk.com/wiki/Programming/Python/Catching%20Exceptions%20Function/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://dirwalk.com/wiki/Programming/Python/Easy%20Projects/</loc>
-     <lastmod>2020-04-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://dirwalk.com/wiki/Programming/Python/Keylogger/</loc>
+     <loc>https://dirwalk.com/wiki/Programming/Python/Resources/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -576,10 +576,6 @@
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/Books/</loc>
-     <lastmod>2020-04-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://dirwalk.com/wiki/System%20Administration/Linux/Disabling%20Ubuntu%20Telemetry/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
@@ -596,15 +592,11 @@
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/Linux%20To-Do/</loc>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/LUKS%20Setup/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://dirwalk.com/wiki/System%20Administration/Linux/Logging/</loc>
-     <lastmod>2020-04-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/Luks%20Setup/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -628,19 +620,19 @@
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/Ubuntu%20Gnome%20Clean/</loc>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/Ubuntu%20Gnome%20Settings/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/XFCE%20Keybind%20Commands/</loc>
-     <lastmod>2020-04-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/YoutubeDL/</loc>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/XFCE%20Keybinds/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://dirwalk.com/wiki/System%20Administration/Linux/ZFS/</loc>
+     <lastmod>2020-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://dirwalk.com/wiki/System%20Administration/Linux/youtube-dl/</loc>
      <lastmod>2020-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
