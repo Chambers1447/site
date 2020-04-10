@@ -6,7 +6,7 @@
 
 * [Bobby: 1](https://www.vulnhub.com/entry/bobby-1,42/) uses VulnInjector, need to provide you own ISO and key.
 
-https://github.com/enaqx/awesome-pentest
+* [Awesome Pentest](https://github.com/enaqx/awesome-pentest)
 
 ## Ubuntu pentest setup
 https://www.youtube.com/watch?v=YhUiAH5SIqk&feature=youtu.be
