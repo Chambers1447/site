@@ -16,9 +16,9 @@ To clone and use my site:
 Install the dependencies.
 
 ```sh
-pip3 install mkdocs --user
-pip3 install mkdocs-material --user
-pip3 install mkdocs-awesome-pages-plugin --user
+python3 -m pip install mkdocs --user
+python3 -m pip install mkdocs-material --user
+python3 -m pip install mkdocs-awesome-pages-plugin --user
 ```
 
 Clone the repository.
